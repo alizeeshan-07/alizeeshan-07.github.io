@@ -27,7 +27,7 @@ The author is a freelance Machine Learning, ML Ops, and data engineer who- as an
 
 <br>
 This online version of the book will remain available for free.<br>
-If you notice any typos or have any suggestions, feel free to open a [pull request here](https://github.com/HAMZA310/hamza310.github.io). 
+If you notice any typos or have any suggestions, feel free to open a [pull request here](https://github.com/alizeeshan-07/alizeeshan-07.github.io). 
 
 
 
