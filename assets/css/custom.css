@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-VariableFont_wght.ttf");
+  font-weight: 200 900;
+}
+
+* {
+  font-family: "Nunito", var(--font-sans);
+}
+
+.prose {
+  text-align: justify;
+}
