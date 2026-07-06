@@ -1,0 +1,34 @@
+# -- Theme Options -- https://blowfish.page/docs/configuration/
+colorScheme = "blowfish"
+defaultAppearance = "dark"      # light or dark
+autoSwitchAppearance = true
+
+enableSearch = false
+enableCodeCopy = true
+
+disableImageOptimization = false
+
+[header]
+  layout = "fixed"              # basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
+
+[footer]
+  showMenu = false
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  layout = "profile"            # this gives the centered photo + name + links look
+  showRecent = false
+  showRecentItems = 0
+  showMoreLink = false
+
+[article]
+  showDate = false
+  showAuthor = false
+  showReadingTime = false
+  showTableOfContents = true
+  showPagination = false
+  showRelatedContent = false
+  showComments = false

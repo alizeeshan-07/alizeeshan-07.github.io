@@ -1,0 +1,23 @@
+languageCode = "en"
+title = "Ali Zeeshan"
+weight = 1
+
+[params]
+  dateFormat = "2 January 2006"
+  description = "Ali Zeeshan — PhD Candidate @ NUST, Head of AI @ Adept Tech Solutions. Research in agentic RL, edge AI, safe autonomy, and AI-native 6G."
+
+[params.author]
+  name = "Ali Zeeshan"
+  image = "img/author.jpg"      # replace assets/img/author.jpg with your photo (square)
+  headline = "PhD Candidate @ NUST · Head of AI @ Adept Tech Solutions"
+  bio = "Closed-loop, AI-native systems — agentic RL, edge AI, safe autonomy, AI-native 6G."
+  links = [
+    { email = "mailto:alphaops@adept-techsolutions.com" },
+    { github = "https://github.com/alizeeshan-07" },
+    { linkedin = "https://www.linkedin.com/in/ali-zeeshan-49596660/" },
+    { link = "https://huggingface.co/alizeeshan-07" },
+    # -- TODO: add your real URLs, then uncomment --
+    # { google-scholar = "https://scholar.google.com/citations?user=YOUR_ID" },
+    # { orcid = "https://orcid.org/0000-0000-0000-0000" },
+    # { x-twitter = "https://x.com/YOUR_HANDLE" },
+  ]
