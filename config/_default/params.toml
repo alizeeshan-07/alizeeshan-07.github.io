@@ -1,5 +1,5 @@
 # -- Theme Options -- https://blowfish.page/docs/configuration/
-colorScheme = "blowfish"
+colorScheme = "noir"
 defaultAppearance = "dark"      # light or dark
 autoSwitchAppearance = true
 
