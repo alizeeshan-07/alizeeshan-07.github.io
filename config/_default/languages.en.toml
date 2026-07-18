@@ -4,12 +4,12 @@ weight = 1
 
 [params]
   dateFormat = "2 January 2006"
-  description = "Ali Zeeshan — PhD Candidate @ NUST, Head of AI @ Adept Tech Solutions. Research in agentic RL, edge AI, safe autonomy, and AI-native 6G."
+  description = "Ali Zeeshan — Head of AI @ Adept Tech Solutions. Agentic AI, optimization agents, LLMs, and fine-tuning. Research in agentic RL, edge AI, safe autonomy, and AI-native 6G."
 
 [params.author]
   name = "Ali Zeeshan"
   image = "img/author.jpg"      # replace assets/img/author.jpg with your photo (square)
-  headline = "PhD Candidate @ NUST · Head of AI @ Adept Tech Solutions"
+  headline = "Head of AI @ Adept Tech Solutions · Agentic AI, Optimization Agents, LLMs & Fine-tuning"
   bio = "Closed-loop, AI-native systems — agentic RL, edge AI, safe autonomy, AI-native 6G."
   links = [
     { email = "mailto:alphaops@adept-techsolutions.com" },
