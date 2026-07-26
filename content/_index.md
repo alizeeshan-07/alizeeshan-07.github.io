@@ -1,10 +1,17 @@
 ---
 title: "Ali Zeeshan"
-description: "Head of AI @ Adept Tech Solutions · Agentic AI, Optimization Agents, LLMs & Fine-tuning"
+description: "PhD Candidate, Electrical Engineering (AI & Autonomous Systems) · Head of AI @ Adept Tech Solutions"
 ---
 
-I build and study **closed-loop, AI-native systems** — where learning happens under hard physical, communication, energy, and cost budgets, and is backed by provable guarantees (Lyapunov stability, constraint satisfaction, sample complexity). Wireless-anchored, but not wireless-limited.
+Information, Processing, and Transmission (IPT) Lab, SEECS, National University of Sciences and Technology (NUST), Islamabad · Advisor: Dr. Syed Ali Hassan
 
-Currently leading AI at **Adept Tech Solutions** — building **agentic AI systems**, **agents for optimization**, and **fine-tuning LLMs** for production — while pursuing my PhD at **NUST** (deep RL for CR-NOMA backscatter communication).
+I build closed-loop AI systems that learn under hard physical, communication, and cost budgets — engineered end-to-end, and backed by provable guarantees. **The learning does the optimizing; the mathematics does the promising.**
 
 {{< button href="/cv.pdf" target="_blank" >}}Download CV{{< /button >}}
+
+## News
+
+- **2025** — "LLM-Based Retrieval-Augmented Generation: A Novel Framework for Resource Optimization in 6G and Beyond Wireless Networks" accepted at **IEEE Communications Magazine**.
+- **May 2025** — Passed PhD Qualifier B with a review of the evolution of efficient LLMs, from Transformers to IoT edge intelligence.
+- **2025** — Survey "RAG Powered LLMs for QA" accepted at **ComTech 2025**.
+- **2023** — Presented "DDPG-based Sum Rate Optimization for Opportunistic Backscatter NOMA Networks" at **IEEE GLOBECOM 2023**.
