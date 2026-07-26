@@ -31,11 +31,14 @@ PhD research in the Information, Processing, and Transmission (IPT) Lab at **SEE
 
 Advise on applied AI/ML system design, agentic RL, and edge-AI deployments alongside my PhD and industry role.
 
-## Telecom Network Operations — ZONG CMPak
+## Core Networks — ZONG CMPak
 
-*Six years*
+*2015 – 2021 · six years*
 
-Operated national telecom networks — carrier-scale infrastructure, running live rather than simulated.
+Operated national telecom core networks — carrier-scale infrastructure, running live rather than simulated.
+
+- **Sr. Core Networks Engineer** · 2016 – 2021
+- **Core Network Engineer** · 2015 – 2016
 
 ## Research projects
 
