@@ -8,6 +8,10 @@ enableCodeCopy = true
 
 disableImageOptimization = false
 
+# Image used for link previews (og:image / twitter:image) when a page has none.
+# Path is relative to assets/.
+defaultSocialImage = "img/author.jpg"
+
 [header]
   layout = "fixed"              # basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
 
