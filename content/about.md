@@ -7,8 +7,12 @@ I'm a research scientist working at the intersection of **wireless systems, mach
 
 I frame these systems as a **timescale hierarchy**: slow, adapting reasoners (LLM agents) set intent and plans over seconds to minutes; fast learned controllers (MARL/DRL) handle scheduling, power, and resource allocation in milliseconds; and control theory (CMDPs, Lyapunov, shields/CBFs) guarantees safety at every layer — all trained and certified inside digital twins before touching reality.
 
-**Roles.** PhD Candidate at NUST · Head of AI at Adept Tech Solutions (Silicon Valley) · independent AI consultant.
+In short: **the learning does the optimizing, the mathematics does the promising.**
+
+**Roles.** Head of AI at Adept Tech Solutions (Silicon Valley) · independent AI consultant · PhD candidate at NUST.
 
 **Methodological signature.** Explicit ablations, pre-registered hypotheses, causal-inference rigor, validated evaluation, and negative results given equal billing with positive ones.
 
-I can be reached at [alphaops@adept-techsolutions.com](mailto:alphaops@adept-techsolutions.com).
+## Contact
+
+Best reached on [LinkedIn](https://www.linkedin.com/in/ali-zeeshan-49596660/).

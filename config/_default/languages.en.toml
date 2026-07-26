@@ -10,11 +10,10 @@ weight = 1
   name = "Ali Zeeshan"
   image = "img/author.jpg"      # replace assets/img/author.jpg with your photo (square)
   headline = "Head of AI @ Adept Tech Solutions · Agentic AI, Optimization Agents, LLMs & Fine-tuning"
-  bio = "Closed-loop, AI-native systems — agentic RL, edge AI, safe autonomy, AI-native 6G."
+  bio = "Closed-loop, AI-native systems — agentic AI, agents for optimization, LLMs & fine-tuning, safe autonomy."
   links = [
-    { email = "mailto:alphaops@adept-techsolutions.com" },
-    { github = "https://github.com/alizeeshan-07" },
     { linkedin = "https://www.linkedin.com/in/ali-zeeshan-49596660/" },
+    { github = "https://github.com/alizeeshan-07" },
     { link = "https://huggingface.co/alizeeshan-07" },
     # -- TODO: add your real URLs, then uncomment --
     # { google-scholar = "https://scholar.google.com/citations?user=YOUR_ID" },
