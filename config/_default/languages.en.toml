@@ -4,13 +4,13 @@ weight = 1
 
 [params]
   dateFormat = "2 January 2006"
-  description = "Ali Zeeshan — Head of AI @ Adept Tech Solutions. Agentic AI, optimization agents, LLMs, and fine-tuning. Research in agentic RL, edge AI, safe autonomy, and AI-native 6G."
+  description = "Ali Zeeshan — PhD Candidate at the IPT Lab, SEECS NUST, and Head of AI at Adept Tech Solutions. Efficient and agentic LLMs at the edge, AI-native wireless networks, and safe & verifiable autonomy."
 
 [params.author]
   name = "Ali Zeeshan"
   image = "img/author.jpg"      # replace assets/img/author.jpg with your photo (square)
-  headline = "Head of AI @ Adept Tech Solutions · Agentic AI, Optimization Agents, LLMs & Fine-tuning"
-  bio = "Closed-loop, AI-native systems — agentic AI, agents for optimization, LLMs & fine-tuning, safe autonomy."
+  headline = "PhD Candidate, Electrical Engineering (AI & Autonomous Systems) · Head of AI @ Adept Tech Solutions"
+  bio = "Closed-loop AI systems that learn under hard physical, communication, and cost budgets — backed by provable guarantees."
   links = [
     { linkedin = "https://www.linkedin.com/in/ali-zeeshan-49596660/" },
     { github = "https://github.com/alizeeshan-07" },

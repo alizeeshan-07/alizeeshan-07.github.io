@@ -3,21 +3,29 @@ title: "Research"
 showTableOfContents: true
 ---
 
-My work pairs **systems engineering with provable guarantees** (CMDP / Lyapunov / finite-time bounds). Selected directions:
+My work pairs **systems engineering with provable guarantees** (CMDP / Lyapunov / finite-time bounds), organized around three themes.
 
-- **Agentic AI & reasoning models** — training LLM agents (RL fine-tuning, RLVR, process reward models, tool-use RL) rather than only prompting them, plus the underlying convergence and sample-complexity theory.
-- **Agents for optimization** — LLM agents that plan and adapt over optimization and control loops; budget- and cost-aware decision making, routing, and cascades. *When to think, how long, on which model.*
-- **Safe & verifiable autonomy** — CMDPs, Lyapunov/ISS, shields/CBFs, MPC filters, runtime monitors, and conformal-prediction guarantees for learned controllers and LLM agents.
-- **AI-native 6G / AI-RAN** — DRL/MARL schedulers, LLM intent layers, GNNs, and digital twins, aligned to the 3GPP Rel-20/21 and ITU IMT-2030 window.
-- **Edge AI & efficient inference** — device–edge–cloud cascades and escalation, quantized small models, system-level efficiency (budgets, caching, energy).
-- **World models & learned simulators** — RSSM/Dreamer-class and transformer/diffusion dynamics, twins as agent gyms, sim-to-real with causal analysis.
-- **Multi-agent RL** — cooperative MARL (QMIX/MAPPO) for distributed resource allocation, swarms, and UAV coordination.
-- **Online / continual adaptation of deployed agents** — online LoRA/PEFT, continual RL, two-timescale slow-weights/fast-policy analysis, drift detection.
-- **Federated / distributed learning** — federated LoRA/PEFT and decentralized optimization for device and agent fleets under wireless constraints.
-- **Modern retrieval topologies** — agentic RAG, retrieval as a budgeted action, groundedness guarantees.
-- **Security of agentic systems** — adversarial RL, robust shields, anomaly probes, and red-team benchmarks.
+## Efficient & agentic LLMs at the edge
 
-**Application domains:** satellite–terrestrial networks · UAV swarms and the low-altitude economy · integrated sensing and communication (ISAC) · IoT and industrial edge
+*Thesis spine.*
+
+Large models are moving onto phones, drones, and gateways, but every query still poses a decision: answer locally, escalate to an edge server, or pay the cloud's cost in latency, money, and bandwidth. I study **inference-time compute allocation** — routing, cascades, budgeted escalation, quantized on-device models — treated as a decision problem with enforceable promises on reliability and cost, rather than a pile of tuned thresholds.
+
+**Representative work:** LLM-based retrieval-augmented generation for resource optimization in 6G networks (*IEEE Communications Magazine*, accepted).
+
+## AI-native wireless networks
+
+I work on learning-driven resource management for 5G-Advanced and 6G: deep reinforcement learning and cooperative multi-agent RL for scheduling, power, and spectrum; language-model intent layers above millisecond controllers; and digital twins (ray-traced channel simulation) as the gym where network policies are trained and stress-tested before deployment. Grounded in the 3GPP standards timeline and evaluated on modern GPU-native simulation stacks.
+
+**Representative work:** DDPG-based sum-rate optimization for opportunistic backscatter NOMA networks (*IEEE GLOBECOM 2023*).
+
+## Safe & verifiable autonomy
+
+Learned controllers optimize well but promise nothing. I attach the promises: constrained Markov decision processes, Lyapunov stability, control-barrier safety filters, and conformal prediction — applied to UAV systems, integrated sensing and communication, and network control, so that a learned policy can be deployed with a certificate instead of a hope.
+
+---
+
+A rule I work by: **never propose a language model where a millisecond control policy belongs — and never ship a learned controller without a certificate.**
 
 ## Toolbox
 

@@ -1,23 +1,49 @@
 ---
 title: "Publications"
-showTableOfContents: false
+showTableOfContents: true
 ---
 
-## Work in progress
+## Accepted / published
 
-Manuscripts under review — titles and links will go up once they land:
+**LLM-Based Retrieval-Augmented Generation: A Novel Framework for Resource Optimization in 6G and Beyond Wireless Networks**
+H. M. A. Zeeshan, M. Umer, M. Akbar, A. Kaushik, M. A. Jamshed, H. Jung, S. A. Hassan.
+*IEEE Communications Magazine* (accepted).
+— Grounding LLM decisions in wireless-domain knowledge; spectrum-management case study.
 
-- **Safe autonomy for aerial and sensing systems** — guarantee-bearing learned control.
-- **LLM-guided network control in a digital-twin loop** — learned scheduling with stability analysis.
+**RAG Powered LLMs for QA: Evolution, Challenges, Applications, and Future Directions**
+H. M. A. Zeeshan et al. *ComTech 2025*.
+— Survey of retrieval-augmented question answering.
 
-In the meantime, code and models are on my [GitHub](https://github.com/alizeeshan-07) and [Hugging Face](https://huggingface.co/alizeeshan-07).
+**DDPG-based Sum Rate Optimization for Opportunistic Backscatter NOMA Networks**
+H. M. A. Zeeshan et al. *IEEE GLOBECOM 2023*.
+— Deep RL for opportunistic backscatter resource optimization.
+
+## Earlier work
+
+**Advanced Techniques for Control of Smart Grids**
+*IEEE ISC2 2017.*
+
+**A Review of Distributed Control Techniques for Power Quality Improvement in Micro-grids**
+*IOP Conference Series: Materials Science and Engineering*, 2017.
+
+## Talks
+
+**Transformers to IoT Edge Intelligence: The Evolution of Efficient LLMs**
+PhD Qualifier B presentation, SEECS NUST, May 2025.
+
+## Software
+
+Open-source releases accompanying each paper appear here, with a one-line description and a reproduction script.
+
+Code and models are also on my [GitHub](https://github.com/alizeeshan-07) and [Hugging Face](https://huggingface.co/alizeeshan-07).
 
 <!-- ============================================================
-TEMPLATE — duplicate this block per paper once published:
+TEMPLATE — duplicate this block per paper once published.
+RULE: papers appear here ONLY once they are on arXiv or accepted —
+never before.
 
-### Paper Title
-**A. Zeeshan**, Co-author. *Venue*, Year.
+**Paper Title**
+H. M. A. Zeeshan, Co-author. *Venue*, Year.
 [Paper](#) · [arXiv](#) · [Code](#)
-
-One-sentence summary of the contribution.
+— One-line takeaway.
 ============================================================ -->
