@@ -11,6 +11,7 @@ I build closed-loop AI systems that learn under hard physical, communication, an
 
 ## News
 
+- **2025** — Joined the **NATO SPS project SHAILLA** on shielding HAPS networks against intelligent link-level attacks.
 - **2025** — "LLM-Based Retrieval-Augmented Generation: A Novel Framework for Resource Optimization in 6G and Beyond Wireless Networks" accepted at **IEEE Communications Magazine**.
 - **May 2025** — Passed PhD Qualifier B with a review of the evolution of efficient LLMs, from Transformers to IoT edge intelligence.
 - **2025** — Survey "RAG Powered LLMs for QA" accepted at **ComTech 2025**.
