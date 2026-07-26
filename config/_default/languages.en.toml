@@ -13,10 +13,11 @@ weight = 1
   bio = "Closed-loop AI systems that learn under hard physical, communication, and cost budgets — backed by provable guarantees."
   links = [
     { linkedin = "https://www.linkedin.com/in/ali-zeeshan-49596660/" },
+    { google-scholar = "https://scholar.google.com/citations?user=2T_o6-QAAAAJ" },
+    { orcid = "https://orcid.org/0009-0002-1949-2044" },
+    { researchgate = "https://www.researchgate.net/profile/Hafiz-Muhammad-Ali-Zeeshan" },
     { github = "https://github.com/alizeeshan-07" },
     { link = "https://huggingface.co/alizeeshan-07" },
-    # -- TODO: add your real URLs, then uncomment --
-    # { google-scholar = "https://scholar.google.com/citations?user=YOUR_ID" },
-    # { orcid = "https://orcid.org/0000-0000-0000-0000" },
+    # -- TODO: add if you want it public --
     # { x-twitter = "https://x.com/YOUR_HANDLE" },
   ]
