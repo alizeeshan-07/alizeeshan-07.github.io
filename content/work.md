@@ -4,20 +4,25 @@ showTableOfContents: true
 cardView: false
 ---
 
-Over a decade in industry alongside the research — from operating national telecom networks to leading an AI function.
+Over a decade in industry alongside the research — from operating national telecom core networks to leading an AI function.
 
-## Head of AI — Adept Tech Solutions Inc.
+## Adept Tech Solutions Inc.
 
-*Silicon Valley (remote) · Present*
+*Silicon Valley (remote) · Nov 2021 – Present*
+
+- **Head of AI** · Jan 2025 – Present
+- **Principal AI Engineer** · Nov 2021 – Dec 2024
 
 Lead the AI function end to end, from research direction to shipped systems.
 
 - Set AI strategy and technical direction for the company.
-- Build and ship production **multi-agent, RAG, and edge-AI systems** under real deployment constraints.
+- Build and ship production **multi-agent, RAG, MCP, and fine-tuned model** systems, optimized for cost and latency.
+- Cloud, hybrid, edge, and on-device deployments with CI/CD and containerization.
+- Governance, ethics, and compliance; mentoring AI teams and translating technical strategy into business impact.
 
 ## PhD Candidate — IPT Lab, SEECS NUST
 
-*Islamabad, Pakistan · Ongoing*
+*Islamabad, Pakistan · Jan 2024 – Present*
 
 PhD research in the Information, Processing, and Transmission (IPT) Lab at **SEECS, NUST**, advised by **Dr. Syed Ali Hassan**, on efficient and agentic large language models at the network edge.
 
@@ -25,21 +30,32 @@ PhD research in the Information, Processing, and Transmission (IPT) Lab at **SEE
 - Deep RL for cognitive-radio NOMA backscatter communication.
 - Provable-guarantee learning under wireless, energy, and cost constraints.
 
-## Independent AI Consultant
+## AI Engineer — Imperium Solutions
 
-*Ongoing*
+*USA · Nov 2021 – Present · part-time, remote*
 
-Advise on applied AI/ML system design, agentic RL, and edge-AI deployments alongside my PhD and industry role.
+AI-powered applications: chatbots, automation workflows, and SaaS platforms.
+
+- Generative AI (LLMs, vision, speech), NLP, RAG, multi-agent orchestration, MCP integration, and model fine-tuning.
+- Inference optimization, cloud-native deployment (AWS, Azure, GCP), MLOps pipelines, API-first architectures.
+
+## Independent AI Consultant — Upwork
+
+*Remote · Dec 2014 – Present*
+
+AI strategy and solution design, SaaS-based AI applications, generative AI, domain-specific fine-tuning, multi-agent orchestration, RAG, inference optimization, and AI-powered process automation.
 
 ## Core Networks — ZONG CMPak
 
-*2015 – 2021 · six years*
+*Pakistan · Jan 2015 – Nov 2021 · six years*
 
 Operated national telecom core networks — carrier-scale infrastructure, running live rather than simulated.
 
-- **Sr. Core Networks Engineer** · 2016 – 2021
-- **Core Network Engineer** · 2015 – 2016
+- **Sr. Core Networks Engineer** · Jul 2016 – Nov 2021 · Faisalabad — troubleshooting, maintenance, and optimization of core network performance; NSS elements, capacity planning, predictive maintenance, KPI improvement.
+- **Core Network Engineer** · Jan 2015 – Jul 2016 · Sahiwal — data analytics for traffic-channel availability and network efficiency, alarm tracking, and resilience reporting.
 
 ## Research projects
 
-**NATO SPS project SHAILLA** — contributing to work on shielding next-generation HAPS (high-altitude platform station) networks against intelligent link-level attacks.
+**NATO SPS project SHAILLA** — *Sep 2025 – ongoing · Canada, Türkiye, Pakistan.* Shielding HAPS Against Intelligent Link-Level Attacks: AI-driven vulnerability analysis, intelligent attack modelling, LLM-based adversarial strategies, and autonomous countermeasure design, assessing end-to-end security of next-generation wireless systems that use high-altitude platform stations as base stations.
+
+**NUST – Huzhou University joint research collaboration** — *Jul 2025 – ongoing · China.* Machine learning for wireless communication systems, spanning AI, LLMs, edge computing, and IoT for future-ready 6G networks.
