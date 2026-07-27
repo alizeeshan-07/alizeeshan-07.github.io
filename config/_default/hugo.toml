@@ -14,4 +14,5 @@ enableEmoji = true
   category = "categories"
 
 [outputs]
-  home = ["HTML", "RSS"]
+  # JSON is required by Blowfish's search — it builds /index.json as the search index.
+  home = ["HTML", "RSS", "JSON"]

@@ -1,4 +1,4 @@
-languageCode = "en"
+locale = "en"
 title = "Ali Zeeshan"
 weight = 1
 
@@ -9,7 +9,9 @@ weight = 1
 [params.author]
   name = "Ali Zeeshan"
   image = "img/author.jpg"      # replace assets/img/author.jpg with your photo (square)
-  headline = "PhD Candidate, Electrical Engineering (AI & Autonomous Systems) · Head of AI @ Adept Tech Solutions"
+  # Rendered with markdownify inside an <h2>; <br> separates the lines.
+  # Line 1: name in Urdu · Line 2: roles · Line 3: personal tagline
+  headline = "<span dir=\"rtl\" lang=\"ur\">علی ذیشان</span><br>PhD Candidate @ **IPT Lab, SEECS NUST** · Head of AI @ **Adept Tech Solutions**<br><span class=\"text-base\">An engineer by trade and a theorist by training — I like systems that must not fail</span>"
   bio = "Closed-loop AI systems that learn under hard physical, communication, and cost budgets — backed by provable guarantees."
   links = [
     { linkedin = "https://www.linkedin.com/in/ali-zeeshan-49596660/" },

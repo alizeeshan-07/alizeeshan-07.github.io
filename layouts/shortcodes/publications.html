@@ -1,0 +1,40 @@
+{{- /*
+  Renders publications from data/publications.yaml, newest first.
+
+  Usage:  {{< publications group="accepted" >}}
+
+  Adding a paper means appending one entry to the data file — no markup here
+  needs to change. Mirrors al-folio's BibTeX-driven list, using Hugo data.
+*/ -}}
+{{- $group := .Get "group" -}}
+{{- if not $group -}}
+  {{- errorf "publications shortcode: missing required 'group' parameter at %s" .Position -}}
+{{- end -}}
+{{- $all := hugo.Data.publications -}}
+{{- if not $all -}}
+  {{- errorf "publications shortcode: data/publications.yaml is missing or empty" -}}
+{{- end -}}
+{{- $pubs := where $all "group" $group -}}
+{{- if not $pubs -}}
+  {{- warnf "publications shortcode: no entries with group=%q" $group -}}
+{{- end -}}
+{{- range sort $pubs "year" "desc" }}
+<div class="mb-6">
+  <div class="font-semibold text-neutral-800 dark:text-neutral-100">{{ .title | markdownify }}</div>
+  {{- with .authors }}
+  <div class="text-sm text-neutral-600 dark:text-neutral-300">{{ . | markdownify }}</div>
+  {{- end }}
+  <div class="text-sm italic text-neutral-600 dark:text-neutral-400">
+    {{- .venue | markdownify -}}
+    {{- with .date }}, {{ . }}{{ end -}}
+  </div>
+  {{- with .takeaway }}
+  <div class="text-sm text-neutral-600 dark:text-neutral-300">— {{ . | markdownify }}</div>
+  {{- end }}
+  {{- with .links }}
+  <div class="text-sm">
+    {{- range $i, $l := . }}{{ if $i }} · {{ end }}<a href="{{ $l.url }}" target="_blank" rel="noopener">{{ $l.name }}</a>{{ end -}}
+  </div>
+  {{- end }}
+</div>
+{{- end -}}
