@@ -11,24 +11,29 @@ Published under the name **Hafiz Muhammad Ali Zeeshan** (cited as H. M. A. Zeesh
 
 **LLM-Based Retrieval-Augmented Generation: A Novel Framework for Resource Optimization in 6G and Beyond Wireless Networks**
 H. M. A. Zeeshan, M. Umer, M. Akbar, A. Kaushik, M. A. Jamshed, H. Jung, S. A. Hassan.
-*IEEE Communications Magazine* (accepted).
+*IEEE Communications Magazine*, May 2025.
 — Grounding LLM decisions in wireless-domain knowledge; spectrum-management case study.
 
 **RAG Powered LLMs for QA: Evolution, Challenges, Applications, and Future Directions**
-H. M. A. Zeeshan et al. *ComTech 2025*.
+H. M. A. Zeeshan et al. *ComTech*, April 2025.
 — Survey of retrieval-augmented question answering.
 
-**DDPG-based Sum Rate Optimization for Opportunistic Backscatter NOMA Networks**
-H. M. A. Zeeshan et al. *IEEE GLOBECOM 2023*.
+**DDPG-Based Sum Rate Optimization for Opportunistic Backscatter NOMA Networks**
+H. M. A. Zeeshan et al. *IEEE GLOBECOM 2023*, December 2023.
 — Deep RL for opportunistic backscatter resource optimization.
+
+## Thesis
+
+**Performance Analysis of CR-NOMA Enabled Backscatter Communications Using Deep Reinforcement Learning**
+MS thesis, NUST, August 2023.
 
 ## Earlier work
 
 **Advanced Techniques for Control of Smart Grids**
-*IEEE ISC2 2017.*
+H. M. A. Zeeshan, M. Naeem, F. Nisar. *IEEE Smart Cities Conference (ISC2)*, September 2017.
 
-**A Review of Distributed Control Techniques for Power Quality Improvement in Micro-grids**
-*IOP Conference Series: Materials Science and Engineering*, 2017.
+**A Review of Distributed Control Techniques for Power Quality Improvement in Micro-Grids**
+H. M. A. Zeeshan, F. Nisar, A. Hassan. *IOP Conference Series: Materials Science and Engineering*, vol. 199, no. 1, May 2017.
 
 ## Talks
 
@@ -47,7 +52,7 @@ RULE: papers appear here ONLY once they are on arXiv or accepted —
 never before.
 
 **Paper Title**
-H. M. A. Zeeshan, Co-author. *Venue*, Year.
+H. M. A. Zeeshan, Co-author. *Venue*, Month Year.
 [Paper](#) · [arXiv](#) · [Code](#)
 — One-line takeaway.
 ============================================================ -->
