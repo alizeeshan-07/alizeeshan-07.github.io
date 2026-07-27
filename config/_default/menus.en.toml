@@ -1,3 +1,4 @@
+# Main navbar — kept deliberately short. Secondary pages live in the footer menu.
 [[main]]
   name = "Home"
   pageRef = "/"
@@ -19,16 +20,27 @@
   weight = 40
 
 [[main]]
-  name = "Tech"
-  pageRef = "tech"
+  name = "Publications"
+  pageRef = "publications"
   weight = 50
 
 [[main]]
-  name = "Publications"
-  pageRef = "publications"
+  name = "Tech"
+  pageRef = "tech"
   weight = 60
 
 [[main]]
+  name = "CV"
+  pageRef = "cv"
+  weight = 70
+
+# -- Footer --
+[[footer]]
+  name = "News"
+  pageRef = "news"
+  weight = 10
+
+[[footer]]
   name = "Travel"
   pageRef = "travel"
-  weight = 70
+  weight = 20

@@ -1,0 +1,54 @@
+# Publication list — the single source of truth for the Publications page.
+#
+# RULE: a paper appears here ONLY once it is accepted or posted to arXiv.
+# Never before. In-progress manuscripts stay out.
+#
+# To add a paper: append an entry below. That is the whole change.
+#   group    accepted | thesis | earlier   (which heading it renders under)
+#   year     used for sorting (newest first)
+#   date     display string, e.g. "May 2025"
+#   links    optional list of {name, url}
+
+- group: accepted
+  year: 2025
+  date: "May 2025"
+  title: "LLM-Based Retrieval-Augmented Generation: A Novel Framework for Resource Optimization in 6G and Beyond Wireless Networks"
+  authors: "H. M. A. Zeeshan, M. Umer, M. Akbar, A. Kaushik, M. A. Jamshed, H. Jung, S. A. Hassan"
+  venue: "IEEE Communications Magazine"
+  takeaway: "Grounding LLM decisions in wireless-domain knowledge; spectrum-management case study."
+
+- group: accepted
+  year: 2025
+  date: "April 2025"
+  title: "RAG Powered LLMs for QA: Evolution, Challenges, Applications, and Future Directions"
+  authors: "H. M. A. Zeeshan et al."
+  venue: "ComTech"
+  takeaway: "Survey of retrieval-augmented question answering."
+
+- group: accepted
+  year: 2023
+  date: "December 2023"
+  title: "DDPG-Based Sum Rate Optimization for Opportunistic Backscatter NOMA Networks"
+  authors: "H. M. A. Zeeshan et al."
+  venue: "IEEE GLOBECOM 2023"
+  takeaway: "Deep RL for opportunistic backscatter resource optimization."
+
+- group: thesis
+  year: 2023
+  date: "August 2023"
+  title: "Performance Analysis of CR-NOMA Enabled Backscatter Communications Using Deep Reinforcement Learning"
+  venue: "MS thesis, NUST"
+
+- group: earlier
+  year: 2017
+  date: "September 2017"
+  title: "Advanced Techniques for Control of Smart Grids"
+  authors: "H. M. A. Zeeshan, M. Naeem, F. Nisar"
+  venue: "IEEE Smart Cities Conference (ISC2)"
+
+- group: earlier
+  year: 2017
+  date: "May 2017"
+  title: "A Review of Distributed Control Techniques for Power Quality Improvement in Micro-Grids"
+  authors: "H. M. A. Zeeshan, F. Nisar, A. Hassan"
+  venue: "IOP Conference Series: Materials Science and Engineering, vol. 199, no. 1"

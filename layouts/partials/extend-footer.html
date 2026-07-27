@@ -1,0 +1,9 @@
+{{- /*
+  Footer motto. Uses Blowfish's extend-footer.html hook, so the theme's own
+  footer.html stays unmodified and upgradeable.
+*/ -}}
+<div class="flex items-center gap-2 pt-2 text-sm text-neutral-500 dark:text-neutral-400">
+  {{/* "bookmark" is not in Blowfish's icon set; "shield" is, and suits the line. */}}
+  <span class="h-4 w-4">{{ partial "icon.html" "shield" }}</span>
+  <span>— If it can't be certified, it isn't finished.</span>
+</div>
