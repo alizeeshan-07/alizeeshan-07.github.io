@@ -5,6 +5,13 @@
 #   series    optional; groups a multi-part run
 #   sortdate  YYYY-MM-DD, used for ordering only
 
+- title: "Five habits that get the best out of Claude Fable 5"
+  url: "https://medium.com/@dexterous02/five-habits-that-get-the-best-out-of-claude-fable-5-6ea20ad67a7e"
+  outlet: "Medium"
+  date: "9 August 2026"
+  sortdate: "2026-08-09"
+  summary: "What changed after five months of running Fable 5 in production — and why most of the improvement came from doing less, not more."
+
 - title: "The migration that pages you is the request body, not the words"
   url: "https://alizeeshan.substack.com/p/the-migration-that-pages-you-is-the"
   outlet: "Substack"
@@ -44,3 +51,10 @@
   sortdate: "2026-08-04"
   series: "Fable 5 in production · part 1 of 5"
   summary: "Prompt habits and cost assumptions carried over from an older model start working against you. An orientation for migrating without quietly burning a quarter's budget."
+
+- title: "Building an Intelligent Research Assistant Chatbot with Claude and arXiv Integration"
+  url: "https://medium.com/@dexterous02/building-an-intelligent-research-assistant-chatbot-with-claude-and-arxiv-integration-5aa68f9abb7f"
+  outlet: "Medium"
+  date: "1 June 2025"
+  sortdate: "2025-06-01"
+  summary: "Building a chatbot that searches arXiv on demand and pulls paper details into the conversation, instead of answering from a fixed corpus. Code in [mcp_arxiv_chatbot](https://github.com/alizeeshan-07/mcp_arxiv_chatbot)."
