@@ -1,0 +1,60 @@
+# Written articles — the single source of truth for the Articles page.
+#
+# To add one: append an entry. Newest first is handled by `sortdate`.
+#   outlet    Substack | Medium | ...  (shown as a badge)
+#   series    optional; groups a multi-part run
+#   sortdate  YYYY-MM-DD, used for ordering only
+
+- title: "Five habits that get the best out of Claude Fable 5"
+  url: "https://medium.com/@dexterous02/five-habits-that-get-the-best-out-of-claude-fable-5-6ea20ad67a7e"
+  outlet: "Medium"
+  date: "9 August 2026"
+  sortdate: "2026-08-09"
+  summary: "What changed after five months of running Fable 5 in production — and why most of the improvement came from doing less, not more."
+
+- title: "The migration that pages you is the request body, not the words"
+  url: "https://alizeeshan.substack.com/p/the-migration-that-pages-you-is-the"
+  outlet: "Substack"
+  date: "9 August 2026"
+  sortdate: "2026-08-09"
+  series: "Fable 5 in production · part 5 of 5"
+  summary: "The request-body changes that break on migration are not the ones most checklists name. One costs money without ever raising an error, and prompts drift without anyone deciding to change them."
+
+- title: "The refusal your error handler can't see: branching on stop_reason before it costs you"
+  url: "https://alizeeshan.substack.com/p/the-refusal-your-error-handler-cant"
+  outlet: "Substack"
+  date: "7 August 2026"
+  sortdate: "2026-08-07"
+  series: "Fable 5 in production · part 4 of 5"
+  summary: "A refusal arrives as a successful HTTP 200 with an empty body. Code that reads the first content block the way it always has will throw on a request the API considers finished."
+
+- title: "A memory that doesn't rot: how to give agents a past you can trust"
+  url: "https://alizeeshan.substack.com/p/a-memory-that-doesnt-rot-how-to-give"
+  outlet: "Substack"
+  date: "5 August 2026"
+  sortdate: "2026-08-05"
+  series: "Fable 5 in production · part 3 of 5"
+  summary: "The files agents write for themselves are the highest-value part of a setup and the easiest to poison. On designing agent memory you can actually rely on."
+
+- title: "Loops, not prompts: how to make Fable 5 work while you sleep"
+  url: "https://alizeeshan.substack.com/p/loops-not-prompts-how-to-make-fable"
+  outlet: "Substack"
+  date: "4 August 2026"
+  sortdate: "2026-08-04"
+  series: "Fable 5 in production · part 2 of 5"
+  summary: "A prompt needs you in the room. A loop is a policy you write once and audit forever — the shift from prompting to unattended, auditable agent execution."
+
+- title: "The Prompting Shift: what changes with Fable 5, and how to run it in production"
+  url: "https://alizeeshan.substack.com/p/the-prompting-shift-what-changes"
+  outlet: "Substack"
+  date: "4 August 2026"
+  sortdate: "2026-08-04"
+  series: "Fable 5 in production · part 1 of 5"
+  summary: "Prompt habits and cost assumptions carried over from an older model start working against you. An orientation for migrating without quietly burning a quarter's budget."
+
+- title: "Building an Intelligent Research Assistant Chatbot with Claude and arXiv Integration"
+  url: "https://medium.com/@dexterous02/building-an-intelligent-research-assistant-chatbot-with-claude-and-arxiv-integration-5aa68f9abb7f"
+  outlet: "Medium"
+  date: "1 June 2025"
+  sortdate: "2025-06-01"
+  summary: "Building a chatbot that searches arXiv on demand and pulls paper details into the conversation, instead of answering from a fixed corpus. Code in [mcp_arxiv_chatbot](https://github.com/alizeeshan-07/mcp_arxiv_chatbot)."

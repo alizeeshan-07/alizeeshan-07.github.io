@@ -1,0 +1,33 @@
+{{- /*
+  Renders written articles from data/articles.yaml, newest first.
+
+  Usage:  {{< articles >}}           all articles
+          {{< articles limit="3" >}} the most recent N
+
+  Adding an article means appending one entry to the data file.
+*/ -}}
+{{- $all := hugo.Data.articles -}}
+{{- if not $all -}}
+  {{- errorf "articles shortcode: data/articles.yaml is missing or empty" -}}
+{{- end -}}
+{{- $items := sort $all "sortdate" "desc" -}}
+{{- with .Get "limit" -}}
+  {{- $items = first (int .) $items -}}
+{{- end -}}
+{{- range $items }}
+<div class="mb-6">
+  <div class="font-semibold">
+    <a href="{{ .url }}" target="_blank" rel="noopener">{{ .title | markdownify }}</a>
+  </div>
+  <div class="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
+    {{- with .outlet }}{{ . }}{{ end -}}
+    {{- with .date }} · {{ . }}{{ end -}}
+    {{- with .series }} · <span class="italic">{{ . }}</span>{{ end -}}
+  </div>
+  {{- with .summary }}
+  {{/* No colour class: inherit the prose body colour so the summary reads more
+       prominently than the metadata line above it, in both light and dark. */}}
+  <div class="mt-1 text-sm">{{ . | markdownify }}</div>
+  {{- end }}
+</div>
+{{- end -}}

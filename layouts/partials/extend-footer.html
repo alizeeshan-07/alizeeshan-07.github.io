@@ -1,6 +1,12 @@
 {{- /*
   Footer motto. Uses Blowfish's extend-footer.html hook, so the theme's own
   footer.html stays unmodified and upgradeable.
+
+  Class note: the theme's Tailwind build only emits classes it actually uses, so
+  invented utilities compile to nothing and fail silently — mb-7 and mt-0.5 both
+  did. Stick to classes the theme already uses. dark: variants DO compile and are
+  load-bearing: the neutral scale inverts, so text-neutral-800 alone is invisible
+  on a dark background.
 */ -}}
 <div class="flex items-center gap-2 pt-2 text-sm text-neutral-500 dark:text-neutral-400">
   {{/* "bookmark" is not in Blowfish's icon set; "shield" is, and suits the line. */}}

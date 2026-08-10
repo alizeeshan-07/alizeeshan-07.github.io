@@ -25,14 +25,19 @@
   weight = 50
 
 [[main]]
+  name = "Articles"
+  pageRef = "articles"
+  weight = 60
+
+[[main]]
   name = "Tech"
   pageRef = "tech"
-  weight = 60
+  weight = 70
 
 [[main]]
   name = "CV"
   pageRef = "cv"
-  weight = 70
+  weight = 80
 
 # -- Footer --
 [[footer]]
