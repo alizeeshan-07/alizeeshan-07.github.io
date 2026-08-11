@@ -8,6 +8,15 @@
   font-family: "Nunito", var(--font-sans);
 }
 
+/* Justify body copy in articles. */
 .prose {
   text-align: justify;
+}
+
+/* ...but never inside a centred layout. Blowfish's homepage hero wraps its
+   content in <article class="... text-center">, and the rule above would
+   otherwise left-align the Download CV button while everything above it
+   stays centred. Higher specificity, so source order does not matter. */
+article.text-center .prose {
+  text-align: center;
 }
