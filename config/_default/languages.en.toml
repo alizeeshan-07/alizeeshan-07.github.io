@@ -14,7 +14,7 @@ weight = 1
   headline = "<span dir=\"rtl\" lang=\"ur\">علی ذیشان</span><br>PhD Candidate @ **IPT Lab, SEECS NUST** · Head of AI @ **Adept Tech Solutions**<br><span class=\"text-base\">An engineer by trade and a theorist by training — I like systems that must not fail</span>"
   bio = "Closed-loop AI systems that learn under hard physical, communication, and cost budgets — backed by provable guarantees."
   links = [
-    { linkedin = "https://www.linkedin.com/in/ali-zeeshan-49596660/" },
+    { linkedin = "https://www.linkedin.com/in/alizeeshan07/" },
     { google-scholar = "https://scholar.google.com/citations?user=2T_o6-QAAAAJ" },
     { orcid = "https://orcid.org/0009-0002-1949-2044" },
     { researchgate = "https://www.researchgate.net/profile/Hafiz-Muhammad-Ali-Zeeshan" },

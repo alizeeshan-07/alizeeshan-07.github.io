@@ -23,4 +23,4 @@ In short: **the learning does the optimizing, the mathematics does the promising
 
 ## Contact
 
-Best reached on [LinkedIn](https://www.linkedin.com/in/ali-zeeshan-49596660/).
+Best reached on [LinkedIn](https://www.linkedin.com/in/alizeeshan07/).
