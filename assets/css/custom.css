@@ -4,8 +4,41 @@
   font-weight: 200 900;
 }
 
+/* Self-hosted so the Urdu wordmark renders identically for every visitor.
+   Without this the logo fell back to whatever Arabic-script font the
+   visitor happened to have — usually Naskh rather than Nastaliq, and on
+   machines with none, empty boxes. */
+@font-face {
+  font-family: "Noto Nastaliq Urdu";
+  src: url("/fonts/NotoNastaliqUrdu.woff2") format("woff2");
+  font-weight: 400 700;
+  font-display: swap;
+}
+
 * {
   font-family: "Nunito", var(--font-sans);
+}
+
+/* The logo is inline SVG using fill="currentColor", so it simply follows
+   this colour: dark ink on light, white on dark. */
+.logo {
+  color: rgba(var(--color-neutral-800), 1);
+}
+
+.dark .logo {
+  color: #ffffff;
+}
+
+.logo svg {
+  height: 2.75rem;
+  width: auto;
+  display: block;
+}
+
+/* Nastaliq needs its own family; the global Nunito rule above would
+   otherwise override it and break the script. */
+.logo svg text {
+  font-family: "Noto Nastaliq Urdu", "Noto Naskh Arabic", serif;
 }
 
 /* Justify body copy in articles. */

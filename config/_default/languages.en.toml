@@ -10,8 +10,8 @@ weight = 1
   name = "Ali Zeeshan"
   image = "img/author.jpg"      # replace assets/img/author.jpg with your photo (square)
   # Rendered with markdownify inside an <h2>; <br> separates the lines.
-  # Line 1: name in Urdu · Line 2: roles · Line 3: personal tagline
-  headline = "<span dir=\"rtl\" lang=\"ur\">علی ذیشان</span><br>AI @ **Adept Tech Solutions** · PhD @ **NUST**<br><span class=\"text-base\">Engineer by trade, theorist by training</span>"
+  # The Urdu name lives in the navbar logo now, so it is not repeated here.
+  headline = "AI @ **Adept Tech Solutions** · PhD @ **NUST**<br><span class=\"text-base\">Engineer by trade, theorist by training</span>"
   bio = "Closed-loop AI systems that learn under hard physical, communication, and cost budgets — backed by provable guarantees."
   links = [
     { linkedin = "https://www.linkedin.com/in/alizeeshan07/" },

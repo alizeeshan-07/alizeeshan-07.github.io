@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="200" viewBox="0 0 600 200" role="img" aria-label="Ali Zeeshan">
+  <!--
+    Urdu wordmark: علی ذیشان
+    - Uses U+06CC (Urdu/farsi yeh) not U+064A (Arabic yeh); the supplied file
+      used the Arabic form, which shapes differently in Nastaliq.
+    - font-family points at the self-hosted Noto Nastaliq Urdu (see custom.css).
+      Blowfish inlines SVG logos into the page, so page CSS and webfonts apply.
+      Without an explicit family this rendered in whatever fallback each
+      visitor happened to have — usually Naskh, sometimes tofu boxes.
+    - fill="currentColor" so the mark follows the theme's text colour:
+      dark ink in light mode, white in dark mode.
+  -->
+  <text x="300" y="140"
+        text-anchor="middle"
+        direction="rtl"
+        font-family="'Noto Nastaliq Urdu', 'Noto Naskh Arabic', serif"
+        font-size="92"
+        fill="currentColor">علی ذیشان</text>
+</svg>
