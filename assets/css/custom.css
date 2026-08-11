@@ -4,14 +4,13 @@
   font-weight: 200 900;
 }
 
-/* Self-hosted so the Urdu wordmark renders identically for every visitor.
-   Without this the logo fell back to whatever Arabic-script font the
-   visitor happened to have — usually Naskh rather than Nastaliq, and on
-   machines with none, empty boxes. */
+/* Reem Kufi 700 — the wordmark's actual typeface, per the logo README.
+   Self-hosted (SIL OFL) so it renders identically for every visitor; the
+   supplied SVGs carried no font at all. Arabic subset only, 9KB. */
 @font-face {
-  font-family: "Noto Nastaliq Urdu";
-  src: url("/fonts/NotoNastaliqUrdu.woff2") format("woff2");
-  font-weight: 400 700;
+  font-family: "Reem Kufi";
+  src: url("/fonts/ReemKufi700.woff2") format("woff2");
+  font-weight: 700;
   font-display: swap;
 }
 
@@ -21,8 +20,10 @@
 
 /* The logo is inline SVG using fill="currentColor", so it simply follows
    this colour: dark ink on light, white on dark. */
+/* Brand green (#2F6F5E, from the logo README) on light backgrounds; white on
+   dark, where the green would sit too close to the background in contrast. */
 .logo {
-  color: rgba(var(--color-neutral-800), 1);
+  color: #2f6f5e;
 }
 
 .dark .logo {
@@ -37,8 +38,9 @@
 
 /* Nastaliq needs its own family; the global Nunito rule above would
    otherwise override it and break the script. */
+/* The global Nunito rule above would otherwise override the wordmark. */
 .logo svg text {
-  font-family: "Noto Nastaliq Urdu", "Noto Naskh Arabic", serif;
+  font-family: "Reem Kufi", sans-serif;
 }
 
 /* Justify body copy in articles. */
