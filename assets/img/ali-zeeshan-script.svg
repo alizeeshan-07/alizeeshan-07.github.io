@@ -1,19 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="200" viewBox="0 0 600 200" role="img" aria-label="Ali Zeeshan">
   <!--
-    Urdu wordmark: علی ذیشان
-    - Uses U+06CC (Urdu/farsi yeh) not U+064A (Arabic yeh); the supplied file
-      used the Arabic form, which shapes differently in Nastaliq.
-    - font-family points at the self-hosted Noto Nastaliq Urdu (see custom.css).
-      Blowfish inlines SVG logos into the page, so page CSS and webfonts apply.
-      Without an explicit family this rendered in whatever fallback each
-      visitor happened to have — usually Naskh, sometimes tofu boxes.
-    - fill="currentColor" so the mark follows the theme's text colour:
-      dark ink in light mode, white in dark mode.
+    Urdu wordmark: علی ذیشان — Reem Kufi 700, per ali-zeeshan-logo/README.txt
+    ("modern geometric Kufic, flat baseline, monoline — NOT Nastaliq").
+
+    Three things the supplied SVGs lacked and this restores:
+    - font-family: all four exports had an empty <defs> and no font, so they
+      rendered in whatever Arabic-script fallback the visitor had.
+    - font-size: without it the text drew at the 16px default in a 600x200 box.
+    - fill: currentColor, so the mark follows the theme colour set in
+      custom.css — brand green on light, white on dark.
+
+    Character note: uses U+06CC (Urdu yeh) not U+064A (Arabic yeh); the
+    supplied files used the Arabic form in both words.
   -->
-  <text x="300" y="140"
+  <text x="300" y="132"
         text-anchor="middle"
         direction="rtl"
-        font-family="'Noto Nastaliq Urdu', 'Noto Naskh Arabic', serif"
-        font-size="92"
+        font-family="'Reem Kufi', sans-serif"
+        font-weight="700"
+        font-size="104"
         fill="currentColor">علی ذیشان</text>
 </svg>
