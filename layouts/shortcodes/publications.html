@@ -18,7 +18,14 @@
 {{- if not $pubs -}}
   {{- warnf "publications shortcode: no entries with group=%q" $group -}}
 {{- end -}}
-{{- range sort $pubs "year" "desc" }}
+{{- /* sortkey is YYYYMM, so papers from the same year keep a defined order —
+       sorting on year alone leaves ties to fall wherever the parser put them. */ -}}
+{{- range $pubs -}}
+  {{- if not .sortkey -}}
+    {{- errorf "publications: entry %q has no sortkey (expected YYYYMM)" .title -}}
+  {{- end -}}
+{{- end -}}
+{{- range sort $pubs "sortkey" "desc" }}
 <div class="mb-6">
   <div class="font-semibold text-neutral-800 dark:text-neutral-100">{{ .title | markdownify }}</div>
   {{- with .authors }}
