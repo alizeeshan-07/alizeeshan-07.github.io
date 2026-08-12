@@ -43,6 +43,132 @@
   font-family: "Reem Kufi", sans-serif;
 }
 
+/* Certifications ----------------------------------------------------------
+   Layout lives here rather than in Tailwind utilities because Blowfish's
+   Tailwind build only emits classes the theme itself uses; grid-cols-*,
+   gap-6 and w-20 all compile to nothing and would fail silently. */
+
+/* auto-fill sized so all five badges sit on one row at the theme's article
+   width (~624px) and reflow to two or three on a phone, without breakpoints. */
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
+  gap: 1.5rem 0.75rem;
+  margin-bottom: 2.25rem;
+}
+
+.certs-grid figure {
+  margin: 0;
+  text-align: center;
+}
+
+.certs-badge {
+  width: 4.75rem;
+  height: 4.75rem;
+  margin: 0 auto 0.55rem;
+  display: block;
+}
+
+/* The prose line-height (28px on a 16px font) is set for body copy and leaves
+   these short wrapped captions looking unrelated to their badge. */
+.certs-grid figcaption a {
+  font-size: 0.82rem;
+  line-height: 1.25;
+  display: block;
+}
+
+.certs-qualifier {
+  display: block;
+  font-size: 0.7rem;
+  line-height: 1.3;
+}
+
+.certs-meta {
+  display: block;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  margin-top: 0.15rem;
+}
+
+.certs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.85rem;
+  /* .prose sets justify on the container and text-align inherits straight
+     through .not-prose, which only blocks the typography plugin's own rules. */
+  text-align: left;
+}
+
+.certs-list .certs-meta {
+  font-size: 0.75rem;
+}
+
+.certs-list a {
+  line-height: 1.3;
+}
+
+.certs-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Issuer marks are inlined SVG with fill="currentColor", so they pick up the
+   surrounding text colour and stay visible on either background. */
+.certs-logo {
+  width: 1.35rem;
+  height: 1.35rem;
+  flex: none;
+}
+
+/* Keeps rows aligned when an issuer has no logo mark available. */
+.certs-logo-empty {
+  display: block;
+}
+
+/* Applied AI projects ------------------------------------------------------ */
+
+.proj {
+  margin-bottom: 1.75rem;
+}
+
+.proj-summary {
+  margin: 0.3rem 0 0;
+  text-align: justify;
+}
+
+.proj-outcomes {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+  /* .prose's justify inherits through .not-prose; a short metric line would
+     otherwise stretch across the full column. */
+  text-align: left;
+}
+
+.proj-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.55rem;
+}
+
+/* Neutral chips rather than the theme's primary colour, so the stack reads as
+   metadata and does not compete with the project title. */
+.proj-tag {
+  font-size: 0.72rem;
+  line-height: 1;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.25rem;
+  background: rgba(var(--color-neutral-200), 1);
+}
+
+.dark .proj-tag {
+  background: rgba(var(--color-neutral-700), 1);
+}
+
 /* Justify body copy in articles. */
 .prose {
   text-align: justify;

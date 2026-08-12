@@ -54,6 +54,12 @@ Operated national telecom core networks — carrier-scale infrastructure, runnin
 - **Sr. Core Networks Engineer** · Jul 2016 – Nov 2021 · Faisalabad — troubleshooting, maintenance, and optimization of core network performance; NSS elements, capacity planning, predictive maintenance, KPI improvement.
 - **Core Network Engineer** · Jan 2015 – Jul 2016 · Sahiwal — data analytics for traffic-channel availability and network efficiency, alarm tracking, and resilience reporting.
 
+## Applied AI projects
+
+Delivered client engagements. Figures are as reported by the clients, and each project links to its portfolio entry.
+
+{{< projects >}}
+
 ## Research projects
 
 **NATO SPS project SHAILLA** — *Sep 2025 – ongoing · Canada, Türkiye, Pakistan.* Shielding HAPS Against Intelligent Link-Level Attacks: AI-driven vulnerability analysis, intelligent attack modelling, LLM-based adversarial strategies, and autonomous countermeasure design, assessing end-to-end security of next-generation wireless systems that use high-altitude platform stations as base stations.

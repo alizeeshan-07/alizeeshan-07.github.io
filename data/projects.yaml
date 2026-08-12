@@ -1,0 +1,61 @@
+# Applied AI projects — the single source of truth for the projects section.
+#
+# These are delivered client engagements, not research. Research work lives in
+# data/publications.yaml and under "Research projects" on the CV page.
+#
+# Figures below are as reported on the CV and the linked Upwork portfolio
+# entries. They are client-reported outcomes, not independently measured
+# benchmarks, and are phrased here as claims rather than as findings.
+#
+#   summary   one or two sentences, what was actually built
+#   stack     the tools that matter — kept short, not an exhaustive list
+#   outcomes  reported results, one short phrase each
+#   url       the Upwork portfolio entry, so each claim has somewhere to land
+
+- title: "Multi-Modal AI Content Creation & Marketing Automation"
+  summary: "A content pipeline spanning text, image, and video generation, orchestrated end to end so campaigns run without manual hand-offs."
+  stack: ["GPT-4", "Claude", "Stable Diffusion", "ControlNet", "n8n", "Zapier", "Make.com"]
+  outcomes: ["400% more content produced", "60% lower creative cost"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=1949793559012343808"
+
+- title: "AI-Enhanced Real Estate Investment Platform"
+  summary: "Satellite and GIS analysis combined with automated comparative market analysis and price forecasting, wired into live MLS data."
+  stack: ["QGIS", "satellite imagery", "time-series forecasting", "MLS integration"]
+  outcomes: ["300% faster opportunity detection", "40% higher valuation accuracy"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=1949792495096324096"
+
+- title: "Intelligent Supply Chain Optimization & Demand Forecasting"
+  summary: "Sequence models over IoT telemetry, with Monte Carlo simulation to size safety stock against demand uncertainty rather than a fixed buffer."
+  stack: ["LSTM", "Transformers", "IoT telemetry", "Monte Carlo simulation"]
+  outcomes: ["90%+ forecast accuracy", "35% lower inventory cost"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=1949791861208416256"
+
+- title: "Computer Vision Quality Control & Inspection System"
+  summary: "In-line defect detection on a production line, fast enough to hold the belt speed and wired directly into the PLCs that reject parts."
+  stack: ["YOLOv8", "Open3D", "PLC integration", "edge inference"]
+  outcomes: ["98%+ detection accuracy", "under 100 ms latency", "100+ items/min"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=1949789820214460416"
+
+- title: "AI-Driven Customer Support & Lead Generation Platform"
+  summary: "Voice-capable support that qualifies inbound leads against BANT criteria during the conversation instead of after it."
+  stack: ["GPT-4", "LLaMA 3", "Whisper", "BANT qualification"]
+  outcomes: ["40% higher lead conversion"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=1949789255581458432"
+
+- title: "Enterprise Document Processing & Workflow Automation"
+  summary: "Document classification and extraction over mixed scanned and digital input, built to a compliance bar rather than bolted on afterwards."
+  stack: ["GPT-4", "Claude", "TrOCR", "CrewAI", "FastAPI", "Make.com"]
+  outcomes: ["95%+ classification accuracy", "GDPR and HIPAA compliant"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=1949786119484649472"
+
+- title: "AI Agents for Marketing Strategy Automation"
+  summary: "A crew of cooperating agents that research a market, draft a schedule, and iterate on campaign performance without a human in each loop."
+  stack: ["LangChain", "AutoGen", "CrewAI"]
+  outcomes: []
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=1888543317360893952"
+
+- title: "Healthcare AI Assistant & Patient Monitoring"
+  summary: "A clinical assistant reading handwritten and scanned notes into structured FHIR records, alongside vitals monitoring that escalates early."
+  stack: ["TrOCR", "FHIR", "real-time monitoring", "HIPAA-compliant deployment"]
+  outcomes: ["70% less administrative work"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=1949793016659992576"

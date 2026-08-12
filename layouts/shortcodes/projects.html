@@ -1,0 +1,37 @@
+{{- /*
+  Renders applied AI projects from data/projects.yaml.
+
+  Usage:  {{< projects >}}
+
+  Class note: layout lives in assets/css/custom.css under .proj-*, because
+  Blowfish's Tailwind build only emits utilities the theme itself uses, so
+  invented ones compile to nothing and fail silently.
+*/ -}}
+{{- $projects := hugo.Data.projects -}}
+{{- if not $projects -}}
+  {{- errorf "projects shortcode: data/projects.yaml is missing or empty" -}}
+{{- end -}}
+<div class="not-prose">
+  {{- range $projects }}
+  <div class="proj">
+    <div class="font-semibold text-neutral-800 dark:text-neutral-100">
+      {{- if .url -}}
+        <a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>
+      {{- else -}}
+        {{ .title }}
+      {{- end -}}
+    </div>
+    <p class="proj-summary text-neutral-600 dark:text-neutral-300">{{ .summary }}</p>
+    {{- with .outcomes }}
+    <p class="proj-outcomes text-neutral-500 dark:text-neutral-400">
+      {{- delimit . " · " -}}
+    </p>
+    {{- end }}
+    {{- with .stack }}
+    <div class="proj-stack">
+      {{- range . }}<span class="proj-tag text-neutral-600 dark:text-neutral-300">{{ . }}</span>{{ end -}}
+    </div>
+    {{- end }}
+  </div>
+  {{- end }}
+</div>
