@@ -195,6 +195,16 @@
   text-align: justify;
 }
 
+/* ...but not the table of contents. Blowfish nests the TOC *inside* the same
+   <section class="prose"> as the article body, so the rule above inherits into
+   it and stretches short nav links across the narrow sidebar column — the
+   spacing in "Healthcare & regulated environments" was the giveaway. Ragged
+   right is correct for a nav list at this width regardless. */
+.toc,
+#TableOfContents {
+  text-align: left;
+}
+
 /* ...but never inside a centred layout. Blowfish's homepage hero wraps its
    content in <article class="... text-center">, and the rule above would
    otherwise left-align the Download CV button while everything above it
