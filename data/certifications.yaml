@@ -1,0 +1,30 @@
+# Certifications — the single source of truth for the Certifications section.
+#
+# Titles and issuers below are taken from each Credly badge page, not from the
+# CV, since Credly is the authoritative record. Two differ from the CV wording:
+#   - AWS badge is "AWS Certified AI Practitioner Early Adopter"
+#   - "Databases and SQL for Data Science" is issued on Credly by Coursera,
+#     though the course itself is IBM's
+#
+# badge  : path under assets/ — the official artwork, downloaded from Credly
+#          rather than hotlinked, so it renders even if their CDN is slow
+# url    : the public Credly page, which is what actually verifies the credential
+
+- title: "AWS Certified AI Practitioner"
+  qualifier: "Early Adopter"
+  issuer: "Amazon Web Services Training and Certification"
+  badge: "img/badges/aws-ai-practitioner.png"
+  url: "https://www.credly.com/badges/d91d539e-6ed8-4623-8423-d74e473337a4"
+  summary: "AI and ML services on AWS, model selection, and responsible-AI practice. Passed before the February 2025 early-adopter cutoff."
+
+- title: "Deep Learning Specialization"
+  issuer: "DeepLearning.AI · Coursera"
+  badge: "img/badges/deep-learning-spec.png"
+  url: "https://www.credly.com/badges/33bc87c2-f411-4bba-8d21-063813a8b607"
+  summary: "Convolutional and recurrent networks, transformers, NLP, and transfer learning."
+
+- title: "Databases and SQL for Data Science"
+  issuer: "IBM · Coursera"
+  badge: "img/badges/ibm-databases-sql.png"
+  url: "https://www.credly.com/badges/16c691fc-b4a3-4081-8a2f-f926ca1aa1ce"
+  summary: "Relational database concepts, SQL query construction, and database access from Python."

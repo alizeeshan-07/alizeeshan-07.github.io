@@ -34,6 +34,10 @@ AI strategy and solution design, domain-specific fine-tuning, multi-agent orches
 **Core Network Engineer** — ZONG CMPak, Sahiwal · Jan 2015 – Jul 2016
 Six years operating national telecom core networks. Troubleshooting, maintenance, and optimization of core network performance; NSS elements; capacity planning; predictive maintenance; data analytics for traffic-channel availability and resilience.
 
+## Certifications
+
+{{< certifications >}}
+
 ## Research projects
 
 **NATO SPS project SHAILLA** · Sep 2025 – ongoing · Canada, Türkiye, Pakistan
