@@ -7,7 +7,7 @@ I am a PhD candidate at **SEECS, NUST**, in the Information, Processing, and Tra
 
 My research sits where wireless systems engineering meets machine learning: language-model strategists guiding millisecond reinforcement-learning controllers, device–edge–cloud inference under latency and bandwidth budgets, and control-theoretic guarantees (constrained MDPs, Lyapunov analysis, barrier functions, conformal prediction) that make learned systems safe to deploy.
 
-I pair research with practice: over a decade in industry, including six years operating national telecom core networks at **ZONG CMPak** (2015–2021, latterly as Sr. Core Networks Engineer) and, currently, serving as **Head of AI at Adept Tech Solutions Inc.** (Silicon Valley, remote), building production multi-agent, RAG, and edge-AI systems. I also contribute to the **NATO SPS project SHAILLA** on securing next-generation HAPS networks, and to a **NUST – Huzhou University** collaboration on machine learning for 6G wireless systems.
+I pair research with practice: over a decade in industry, including seven years operating national telecom core networks at **ZONG CMPak** (2015–2021, latterly as Sr. Engineer, NSS) and, currently, serving as **Head of AI at Adept Tech Solutions Inc.** (Silicon Valley, remote) and **AI Strategy Lead at AI Workforce** (UK). That work is multi-agent orchestration, Model Context Protocol integrations, RAG pipelines, and fine-tuned domain-specific models — with inference optimization, quantization, and multi-environment deployment across cloud, hybrid, and edge, under ethical-AI frameworks and MLOps practice. Fourteen production systems since 2022. I also contribute to the **NATO SPS project SHAILLA** on securing next-generation HAPS networks, and to a **NUST – Huzhou University** collaboration on machine learning for 6G wireless systems.
 
 More broadly, I work at the intersection of **wireless systems, machine-learning theory, foundation models, and edge/federated learning**. My unifying thread is *closed-loop systems where learning happens under hard physical, communication, energy, or cost budgets* — engineered end-to-end and backed by provable guarantees.
 
@@ -15,7 +15,9 @@ I frame these systems as a **timescale hierarchy**: slow, adapting reasoners (LL
 
 In short: **the learning does the optimizing, the mathematics does the promising.**
 
-**Roles.** PhD candidate, IPT Lab, SEECS NUST · Head of AI at Adept Tech Solutions Inc. (Silicon Valley, remote) · independent AI consultant.
+**Roles.** PhD candidate, IPT Lab, SEECS NUST · Head of AI and Emerging Technologies at Adept Tech Solutions Inc. (Silicon Valley, remote) · AI Strategy Lead at AI Workforce (UK) · founder of NeuralStacks · independent AI consultant.
+
+**Languages.** Urdu and Punjabi (native) · English (full professional).
 
 **Education.** PhD in Electrical Engineering (AI & Autonomous Systems), SEECS NUST — Jan 2024 to present, CGPA 4.0/4.0. MSc in Electrical Engineering (AI & Autonomous Systems), SEECS NUST — 2021–2023, *with Distinction*, CGPA 4.0/4.0. BSc in Electrical Engineering (Electronics & Telecommunications), UET Lahore — 2010–2014, CGPA 3.34/4.0. Earlier work in smart-grid control.
 

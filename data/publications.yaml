@@ -3,52 +3,109 @@
 # RULE: a paper appears here ONLY once it is accepted or posted to arXiv.
 # Never before. In-progress manuscripts stay out.
 #
+# Bibliographic detail (titles, author order, volume, pages, DOI) is taken from
+# Crossref, i.e. the publisher's own deposited record, rather than from a CV or
+# a profile page. Where they disagreed, Crossref won.
+#
 # To add a paper: append an entry below. That is the whole change.
 #   group    accepted | thesis | earlier   (which heading it renders under)
-#   year     used for sorting (newest first)
-#   date     display string, e.g. "May 2025"
+#   sortkey  YYYYMM as an integer — sorts within a group, newest first
+#   date     display string, e.g. "September 2025"
 #   links    optional list of {name, url}
 
 - group: accepted
+  sortkey: 202509
   year: 2025
-  date: "May 2025"
-  title: "LLM-Based Retrieval-Augmented Generation: A Novel Framework for Resource Optimization in 6G and Beyond Wireless Networks"
-  authors: "H. M. A. Zeeshan, M. Umer, M. Akbar, A. Kaushik, M. A. Jamshed, H. Jung, S. A. Hassan"
-  venue: "IEEE Communications Magazine"
-  takeaway: "Grounding LLM decisions in wireless-domain knowledge; spectrum-management case study."
+  date: "September 2025"
+  title: "Toward Intelligent and Sustainable IoT: A DRL Approach for Backscatter-Based Communication Under QoS Constraints"
+  authors: "**H. M. A. Zeeshan**, S. A. Ullah, M. S. J. Solaija, M. A. Jamshed, M. M. Mojahedian, H. Jung, S. A. Hassan"
+  venue: "IEEE Open Journal of the Communications Society, vol. 6, pp. 7589–7603"
+  takeaway: "Journal extension of the GLOBECOM work: deep RL for QoS-constrained backscatter IoT."
+  links:
+    - name: "DOI"
+      url: "https://doi.org/10.1109/OJCOMS.2025.3608618"
 
 - group: accepted
+  sortkey: 202510
+  year: 2025
+  date: "October 2025"
+  title: "LLM-Based Retrieval-Augmented Generation: A Novel Framework for Resource Optimization in 6G and Beyond Wireless Networks"
+  authors: "**H. M. A. Zeeshan**, M. Umer, M. Akbar, A. Kaushik, M. A. Jamshed, H. Jung, S. A. Hassan"
+  venue: "IEEE Communications Magazine, vol. 63, no. 10, pp. 60–67"
+  takeaway: "Grounding LLM decisions in wireless-domain knowledge; spectrum-management case study."
+  links:
+    - name: "DOI"
+      url: "https://doi.org/10.1109/MCOM.001.2400774"
+
+- group: accepted
+  sortkey: 202508
+  year: 2025
+  date: "August 2025"
+  title: "LLM-Enhanced Dynamic Spectrum Management for Integrated Non-Terrestrial and Terrestrial Networks: A Multi-Objective Optimization Approach"
+  authors: "**H. M. A. Zeeshan**, A. Ahmad, S. A. Hassan, M. S. J. Solaija, S. H. Chauhdary"
+  venue: "Mobile Networks and Applications, vol. 30, no. 3–4, pp. 459–470"
+  takeaway: "Joint throughput, interference, fairness, and energy objectives across satellite and terrestrial spectrum."
+  links:
+    - name: "DOI"
+      url: "https://doi.org/10.1007/s11036-026-02490-z"
+
+- group: accepted
+  sortkey: 202504
   year: 2025
   date: "April 2025"
   title: "RAG Powered LLMs for QA: Evolution, Challenges, Applications, and Future Directions"
-  authors: "H. M. A. Zeeshan et al."
-  venue: "ComTech"
-  takeaway: "Survey of retrieval-augmented question answering."
+  authors: "**H. M. A. Zeeshan**, M. Faizan, U. Zia, A. Gohar"
+  venue: "International Conference on Communication Technologies (ComTech), pp. 1–6"
+  takeaway: "Survey of retrieval-augmented question answering. *Best Paper, Software Engineering Track.*"
+  links:
+    - name: "DOI"
+      url: "https://doi.org/10.1109/ComTech65062.2025.11034531"
 
 - group: accepted
+  sortkey: 202312
   year: 2023
   date: "December 2023"
   title: "DDPG-Based Sum Rate Optimization for Opportunistic Backscatter NOMA Networks"
-  authors: "H. M. A. Zeeshan et al."
-  venue: "IEEE GLOBECOM 2023"
+  authors: "**H. M. A. Zeeshan**, S. A. Ullah, S. A. Hassan, Z. Ding, H. Jung"
+  venue: "IEEE GLOBECOM 2023, pp. 3312–3317"
   takeaway: "Deep RL for opportunistic backscatter resource optimization."
+  links:
+    - name: "DOI"
+      url: "https://doi.org/10.1109/GLOBECOM54140.2023.10437095"
 
 - group: thesis
+  sortkey: 202308
   year: 2023
   date: "August 2023"
   title: "Performance Analysis of CR-NOMA Enabled Backscatter Communications Using Deep Reinforcement Learning"
   venue: "MS thesis, NUST"
 
 - group: earlier
+  sortkey: 201709
   year: 2017
   date: "September 2017"
   title: "Advanced Techniques for Control of Smart Grids"
-  authors: "H. M. A. Zeeshan, M. Naeem, F. Nisar"
-  venue: "IEEE Smart Cities Conference (ISC2)"
+  authors: "**H. M. A. Zeeshan**, M. Naeem, F. Nisar"
+  venue: "IEEE International Smart Cities Conference (ISC2), pp. 1–5"
+  links:
+    - name: "DOI"
+      url: "https://doi.org/10.1109/ISC2.2017.8090814"
 
 - group: earlier
+  sortkey: 201705
   year: 2017
   date: "May 2017"
   title: "A Review of Distributed Control Techniques for Power Quality Improvement in Micro-Grids"
-  authors: "H. M. A. Zeeshan, F. Nisar, A. Hassan"
-  venue: "IOP Conference Series: Materials Science and Engineering, vol. 199, no. 1"
+  authors: "**H. M. A. Zeeshan**, F. Nisar, A. Hassan"
+  venue: "IOP Conference Series: Materials Science and Engineering, vol. 199, no. 1, 012025"
+  links:
+    - name: "DOI"
+      url: "https://doi.org/10.1088/1757-899X/199/1/012025"
+
+- group: earlier
+  sortkey: 201400
+  year: 2014
+  date: "2014"
+  title: "Development of a Control System for Shell and Tube Heat Exchanger in MATLAB Simulink"
+  authors: "**H. M. A. Zeeshan**, O. Ahmed, A. Ghaffar, M. Atif, C. H. Riaz, M. Z. Rafique, et al."
+  venue: "Technical Journal, University of Engineering and Technology Taxila, vol. 19, no. 4, pp. 14–21"
