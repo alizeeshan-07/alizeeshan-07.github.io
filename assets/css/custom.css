@@ -195,13 +195,21 @@
   text-align: justify;
 }
 
-/* ...but not the table of contents. Blowfish nests the TOC *inside* the same
+/* ...but never in a sidebar. Blowfish nests the TOC *inside* the same
    <section class="prose"> as the article body, so the rule above inherits into
    it and stretches short nav links across the narrow sidebar column — the
-   spacing in "Healthcare & regulated environments" was the giveaway. Ragged
-   right is correct for a nav list at this width regardless. */
+   spacing in "Healthcare & regulated environments" was the giveaway.
+   Justification needs a measure wide enough to absorb the space it
+   redistributes, and a ~220px column is not that.
+
+   The column wrapper is matched with :has() rather than by its class, because
+   the class is a string of Tailwind utilities that would break on any theme
+   update. Anything holding the TOC is a sidebar by definition. */
 .toc,
-#TableOfContents {
+#TableOfContents,
+.prose nav,
+.prose aside,
+.prose div:has(> .toc) {
   text-align: left;
 }
 
