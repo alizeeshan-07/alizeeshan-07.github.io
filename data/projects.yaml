@@ -1,61 +1,268 @@
-# Applied AI projects — the single source of truth for the projects section.
+# Applied AI projects — the single source of truth for the Projects page.
 #
-# These are delivered client engagements, not research. Research work lives in
-# data/publications.yaml and under "Research projects" on the CV page.
+# Source: the Upwork portfolio (27 published items, captured 12 Aug 2026), plus
+# two engagements that appear on the CV but are no longer published on Upwork.
+# Research work lives in data/publications.yaml, not here.
 #
-# Figures below are as reported on the CV and the linked Upwork portfolio
-# entries. They are client-reported outcomes, not independently measured
-# benchmarks, and are phrased here as claims rather than as findings.
+# CLIENT IDENTITY: Upwork never displays a client company or country on this
+# profile — only a first name and last initial. So no client is named. Where the
+# source states an industry, it is recorded as `sector` instead; where it does
+# not, sector is omitted rather than guessed.
 #
-#   summary   one or two sentences, what was actually built
-#   stack     the tools that matter — kept short, not an exhaustive list
-#   outcomes  reported results, one short phrase each
-#   url       the Upwork portfolio entry, so each claim has somewhere to land
+# FIGURES are client-reported outcomes copied from the portfolio entries, not
+# independently measured benchmarks. Phrased as reported results.
+#
+#   group     agentic | rag | voice | healthcare | saas | automation | ml
+#   goal      the problem being solved
+#   approach  what was actually built
+#   impact    reported results — omitted entirely where the entry states none
+#   url       the Upwork portfolio entry, omitted where no longer published
 
-- title: "Multi-Modal AI Content Creation & Marketing Automation"
-  summary: "A content pipeline spanning text, image, and video generation, orchestrated end to end so campaigns run without manual hand-offs."
-  stack: ["GPT-4", "Claude", "Stable Diffusion", "ControlNet", "n8n", "Zapier", "Make.com"]
-  outcomes: ["400% more content produced", "60% lower creative cost"]
-  url: "https://www.upwork.com/freelancers/alizeeshan?p=1949793559012343808"
+# ---------------------------------------------------------------- agentic
+- group: agentic
+  title: "Multi-Agent System Running 200+ Tasks Daily"
+  goal: "Autonomous agents to handle inventory, marketing, and operations, replacing four manual workflows across departments."
+  approach: "A multi-agent system on LangGraph with human-in-the-loop approvals, MCP tool orchestration, and CRM/ERP integration."
+  impact: "Four agents now handle 85% of operational decisions, at 97% task accuracy across 200+ daily operations."
+  stack: ["LangGraph", "MCP", "LangChain", "OpenAI API", "Python"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=2022336771604488192"
 
-- title: "AI-Enhanced Real Estate Investment Platform"
-  summary: "Satellite and GIS analysis combined with automated comparative market analysis and price forecasting, wired into live MLS data."
-  stack: ["QGIS", "satellite imagery", "time-series forecasting", "MLS integration"]
-  outcomes: ["300% faster opportunity detection", "40% higher valuation accuracy"]
-  url: "https://www.upwork.com/freelancers/alizeeshan?p=1949792495096324096"
+- group: agentic
+  title: "AI Agent Qualifying 150+ Leads a Day Inside HubSpot"
+  sector: "B2B sales"
+  goal: "A sales team was spending 60% of its time on unqualified leads, and needed the qualification, research, and outreach drafting to happen autonomously inside HubSpot."
+  approach: "A custom agent using OpenAI function calling with eight connected tools, memory persistence, and escalation rules."
+  impact: "Qualification time fell from 45 minutes to 3. Qualified pipeline grew 3× in 30 days."
+  stack: ["OpenAI function calling", "HubSpot", "Python", "API integration"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=2022340520868012032"
 
-- title: "Intelligent Supply Chain Optimization & Demand Forecasting"
-  summary: "Sequence models over IoT telemetry, with Monte Carlo simulation to size safety stock against demand uncertainty rather than a fixed buffer."
-  stack: ["LSTM", "Transformers", "IoT telemetry", "Monte Carlo simulation"]
-  outcomes: ["90%+ forecast accuracy", "35% lower inventory cost"]
-  url: "https://www.upwork.com/freelancers/alizeeshan?p=1949791861208416256"
+- group: agentic
+  title: "HubSpot CRM Lead Qualification Bot"
+  sector: "B2B sales"
+  goal: "Every inbound lead was being reviewed by hand, wasting hours on unqualified prospects while high-intent buyers were missed."
+  approach: "LLM-based scoring with behavioural signal analysis and custom routing rules, plus automated enrichment and assignment by deal potential."
+  impact: "Sales efficiency up 40% in the first month; qualified-lead response time down from four hours to under fifteen minutes."
+  stack: ["OpenAI API", "HubSpot", "CRM automation", "API integration"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=2030482749045604352"
 
-- title: "Computer Vision Quality Control & Inspection System"
-  summary: "In-line defect detection on a production line, fast enough to hold the belt speed and wired directly into the PLCs that reject parts."
-  stack: ["YOLOv8", "Open3D", "PLC integration", "edge inference"]
-  outcomes: ["98%+ detection accuracy", "under 100 ms latency", "100+ items/min"]
-  url: "https://www.upwork.com/freelancers/alizeeshan?p=1949789820214460416"
+- group: agentic
+  title: "Conversational Discovery Platform Cutting Search Time 93%"
+  sector: "wellness"
+  goal: "Replace a 30-minute retreat search with a conversational experience that reads emotional state rather than matching keywords."
+  approach: "An agentic platform on LangGraph, FastAPI, and RAG that profiles emotional state, applies constraints, and matches users to vetted options through guided conversation."
+  impact: "93% faster discovery, 95% match accuracy, 98% lead qualification, $312K recovered revenue. Payback in under four months."
+  stack: ["LangGraph", "FastAPI", "RAG"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=2022049969207476224"
 
-- title: "AI-Driven Customer Support & Lead Generation Platform"
-  summary: "Voice-capable support that qualifies inbound leads against BANT criteria during the conversation instead of after it."
-  stack: ["GPT-4", "LLaMA 3", "Whisper", "BANT qualification"]
-  outcomes: ["40% higher lead conversion"]
+- group: agentic
+  title: "Omnichannel Support and Lead Generation Platform"
+  goal: "Support and lead qualification across web, voice, and social channels without losing conversational context between them."
+  approach: "GPT-4 and LLaMA 3 with Whisper for voice, behavioural analytics for lead scoring, automated BANT qualification, and CRM integration. Real-time sentiment analysis triggers escalation."
+  impact: "Converts 40% more leads."
+  stack: ["GPT-4", "LLaMA 3", "Whisper", "BANT qualification", "CRM"]
   url: "https://www.upwork.com/freelancers/alizeeshan?p=1949789255581458432"
 
-- title: "Enterprise Document Processing & Workflow Automation"
-  summary: "Document classification and extraction over mixed scanned and digital input, built to a compliance bar rather than bolted on afterwards."
-  stack: ["GPT-4", "Claude", "TrOCR", "CrewAI", "FastAPI", "Make.com"]
-  outcomes: ["95%+ classification accuracy", "GDPR and HIPAA compliant"]
-  url: "https://www.upwork.com/freelancers/alizeeshan?p=1949786119484649472"
-
-- title: "AI Agents for Marketing Strategy Automation"
-  summary: "A crew of cooperating agents that research a market, draft a schedule, and iterate on campaign performance without a human in each loop."
+- group: agentic
+  title: "Marketing Strategy Automation Agents"
+  goal: "Identify which parts of a marketing planning workflow could be handed to autonomous agents."
+  approach: "Mapped the existing workflow, then built and orchestrated agents for research, content, and scheduling using LangChain, AutoGen, and CrewAI, with performance tracking feeding back into the workflow."
   stack: ["LangChain", "AutoGen", "CrewAI"]
-  outcomes: []
   url: "https://www.upwork.com/freelancers/alizeeshan?p=1888543317360893952"
 
-- title: "Healthcare AI Assistant & Patient Monitoring"
-  summary: "A clinical assistant reading handwritten and scanned notes into structured FHIR records, alongside vitals monitoring that escalates early."
-  stack: ["TrOCR", "FHIR", "real-time monitoring", "HIPAA-compliant deployment"]
-  outcomes: ["70% less administrative work"]
+- group: agentic
+  title: "Lead Generation Agent with CRM Integration"
+  goal: "Find, personalise, and prioritise outbound prospecting rather than working a static list."
+  approach: "Ideal-customer profiling, AI-identified prospects, tailored outreach, automated nurturing, and lead scoring, wired into HubSpot and Salesforce."
+  stack: ["GPT-4", "HubSpot", "Salesforce"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=1888482056855818240"
+
+# ---------------------------------------------------------------- rag
+- group: rag
+  title: "Enterprise RAG Knowledge Assistant with Citations"
+  goal: "A 200-person company needed instant, cited answers from SOPs, Confluence, and Slack history — employees were waiting hours on manager replies."
+  approach: "A retrieval pipeline on Pinecone, LangChain, and OpenAI embeddings, with source-citation logic, chunk optimisation, and role-based access for secure deployment."
+  impact: "Manager escalations down 70%. Retrieval time went from hours to seconds, with citations attached."
+  stack: ["Pinecone", "LangChain", "OpenAI embeddings", "Python"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=2030479937407168512"
+
+- group: rag
+  title: "Agentic RAG Content Platform"
+  goal: "Autonomous research, drafting, and refinement of marketing content grounded in a company's own knowledge base."
+  approach: "A multi-step agentic RAG pipeline — research agent, writing agent, editing agent in sequence — inside a full SaaS shell with React frontend, Python backend, Stripe billing, and a vector store for enterprise grounding."
+  impact: "Scaled to hundreds of active users."
+  stack: ["LangChain", "Pinecone", "FastAPI", "React", "Stripe"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=2030486515702562816"
+
+- group: rag
+  title: "Enterprise Document Processing and Extraction"
+  goal: "Classify and extract from thousands of mixed scanned and digital documents daily, to a compliance standard rather than best-effort."
+  approach: "GPT-4 and Claude for classification, with TrOCR, DocParser, and Donut handling multi-format OCR. CrewAI orchestrates routing, extraction, and QA agents; FastAPI gateways and Make.com connect it to existing workflows."
+  impact: "Thousands of documents a day at 95%+ accuracy, meeting GDPR and HIPAA standards."
+  stack: ["GPT-4", "Claude", "TrOCR", "Donut", "CrewAI", "FastAPI"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=1949786119484649472"
+
+- group: rag
+  title: "Document Ingestion and RAG Chatbot"
+  goal: "Make a company's own document set answerable through chat."
+  approach: "Document preparation and indexing with LlamaIndex, LangChain for the retrieval framework, an LLM connected by API, and a web chat interface — then deployment, accuracy testing, and retrieval tuning against user feedback."
+  stack: ["LlamaIndex", "LangChain", "Pinecone", "Python"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=1888528864193744896"
+
+# ---------------------------------------------------------------- voice
+- group: voice
+  title: "Voice-First Translation for a Multilingual Daycare Network"
+  sector: "childcare"
+  goal: "Teachers were losing four minutes per update fighting Google Translate across eight languages, causing lost reports and serious parent complaints."
+  approach: "A voice-first pipeline on Whisper, GPT-4, AWS EC2, and Supabase. Teachers speak naturally; the system transcribes, adjusts tone, and delivers via WhatsApp or SMS in the parent's own language."
+  impact: "Four minutes down to fifteen seconds, 95% accuracy, 1,200+ messages sent, $24K saved annually. Full rollout in three weeks."
+  stack: ["Whisper", "GPT-4", "AWS EC2", "Supabase", "WhatsApp API"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=2022051131243593728"
+
+- group: voice
+  title: "Voice-Note Messaging MVP with Live Translation"
+  sector: "education"
+  goal: "Take a multilingual school-community messaging product from idea to revenue in weeks, converting voice notes into translated parent updates."
+  approach: "Shipped the whole product — React, FastAPI, WebSockets, Whisper for speech-to-text, GPT for translation and summarisation — including auth, admin panel, and deployment pipeline."
+  impact: "Concept to revenue-generating in five weeks."
+  stack: ["React", "FastAPI", "WebSockets", "Whisper", "OpenAI API"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=2030484355637633024"
+
+# ---------------------------------------------------------------- healthcare
+- group: healthcare
+  title: "Agentic Patient Triage Replacing Call-Centre Routing"
+  sector: "healthcare"
+  goal: "Replace manual call-centre triage with real-time intelligent routing, so patients reach the right specialist faster."
+  approach: "A voice-based AI coordinator that infers patient intent, checks live EMR availability, enforces clinical protocols, and books appointments through a HIPAA-compliant integration."
+  impact: "Zero hold time, 30% fewer abandoned calls, 22% more bookings, 98% of calls filtered automatically, and roughly 340% first-year return."
+  stack: ["LangGraph", "OpenAI", "EMR integration", "HIPAA-compliant deployment"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=2018637995283783680"
+
+- group: healthcare
+  title: "HIPAA-Aware Clinical AI Assistant in Production"
+  sector: "healthcare"
+  goal: "An assistant for patient monitoring and clinical workflows that meets strict HIPAA and data-security requirements rather than working around them."
+  approach: "Encrypted data handling, audit logging, role-based access, and secure model inference on isolated cloud infrastructure, with patient-monitoring dashboards and compliant data pipelines."
+  impact: "In production with zero compliance incidents. Clinical workflow time down 45%."
+  stack: ["Python", "AWS", "HIPAA-compliant infrastructure"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=2030485995631468544"
+
+- group: healthcare
+  title: "Clinical Assistant with HL7/FHIR and Patient Monitoring"
+  sector: "healthcare"
+  goal: "Diagnostic and treatment support that reads existing clinical records and watches for patient deterioration early."
+  approach: "Medical LLMs trained on clinical literature, TrOCR automating medical coding, and HL7 FHIR integration for EHR connectivity. Continuous monitoring analyses vitals and wearable data."
+  impact: "Administrative tasks down 70%, with population-health analytics alongside decision support."
+  stack: ["Medical LLMs", "TrOCR", "HL7 FHIR", "wearable data"]
   url: "https://www.upwork.com/freelancers/alizeeshan?p=1949793016659992576"
+
+- group: healthcare
+  title: "AI Governance and Compliance Programme for a Practice Network"
+  sector: "healthcare"
+  goal: "A governance and compliance programme spanning a network of clinical practices, not a single site."
+  approach: "An AI-assisted compliance framework with policy automation, audit-ready documentation, continuous risk monitoring, and explainability and bias controls appropriate to a regulated setting."
+  impact: "An auditable governance system that reduces compliance overhead and standardises oversight across multiple practices."
+  stack: ["Python", "process automation", "audit tooling"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=2060275356691824640"
+
+# ---------------------------------------------------------------- saas
+- group: saas
+  title: "Enterprise Multi-Tenant AI SaaS for the Spanish Market"
+  goal: "A production-grade multi-tenant AI SaaS with a full role hierarchy, billing, and localisation."
+  approach: "Spring Boot microservices with REST and JWT/OAuth2, a React/TypeScript frontend, PostgreSQL with tenant isolation, Redis caching, and an LLM automation layer. Multi-level RBAC from super-admin to staff, Stripe subscriptions, full ES/EN internationalisation, CI/CD, and monitoring."
+  impact: "Supports unlimited tenants; live in production with no critical post-launch defects."
+  stack: ["Spring Boot", "React", "TypeScript", "PostgreSQL", "Redis", "Stripe"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=2060274434407071744"
+
+- group: saas
+  title: "Booking and Operations SaaS with an Embedded AI Assistant"
+  goal: "A localised AI-powered platform for salons in the Spanish market covering bookings, clients, services, staff, and analytics."
+  approach: "Spring Boot backend with REST APIs, PostgreSQL, JWT auth and role-based access; React frontend with a fully localised Spanish UI. LLM features include a customer-facing assistant, smart appointment suggestions, and automated WhatsApp and email reminders. Deployed with CI/CD, monitoring, and Stripe billing."
+  impact: "Shipped on time with a five-star review; multi-tenant architecture ready for nationwide rollout."
+  stack: ["Spring Boot", "React", "PostgreSQL", "Stripe", "WhatsApp API"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=2051271238659678208"
+
+- group: saas
+  title: "Multi-Tenant AI SaaS with Subscription Billing"
+  goal: "A complete multi-tenant AI SaaS with subscription billing, user management, and embedded AI, built to scale from day one."
+  approach: "React/Next.js frontend, FastAPI backend, PostgreSQL, and Stripe subscriptions, with multi-tenancy, role-based access, usage tracking, admin dashboards, and LLM-powered features throughout."
+  impact: "Scaled to hundreds of active users and serves paying enterprise clients."
+  stack: ["Next.js", "FastAPI", "PostgreSQL", "Stripe"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=2030484977778745344"
+
+# ---------------------------------------------------------------- automation
+- group: automation
+  title: "Multi-Agent Procurement Workflow"
+  sector: "procurement"
+  goal: "Each procurement batch took over six hours of manual work reviewing vendor quotes, matching purchase orders, and generating approval documents."
+  approach: "A multi-agent LLM orchestration on n8n, OpenAI, and custom Python pipelines, with one agent each for quote extraction, PO matching, anomaly detection, and report generation, coordinated by automated triggers."
+  impact: "Six hours per batch down to 22 minutes, with PO matching errors eliminated."
+  stack: ["n8n", "OpenAI", "Python", "prompt engineering"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=2030483734229561344"
+
+- group: automation
+  title: "Email Drafting System Inside Google Workspace"
+  sector: "customer support"
+  goal: "A support team handling 2,000+ tickets a month needed faster replies without losing quality or personalisation."
+  approach: "An AI drafting system embedded in Google Workspace using the OpenAI API, custom prompt templates, and contextual retrieval from past ticket history, with auto-categorisation, tone matching, and one-click approval."
+  impact: "Average response time down 63% across the team; backlog cleared within three weeks and agent satisfaction up."
+  stack: ["OpenAI API", "Google Workspace", "Python"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=2030480953380175872"
+
+- group: automation
+  title: "Multi-Modal Content and Marketing Platform"
+  goal: "Cross-platform content production — text, image, and video — without manual hand-offs between tools."
+  approach: "GPT-4 and Claude for text with Stable Diffusion and ControlNet for visuals, custom-trained models for brand consistency, automated A/B testing, and Zapier and Make.com integrations publishing across 20+ channels. Analytics track ROI and conversion attribution."
+  impact: "400% more content produced at 60% lower creation cost."
+  stack: ["GPT-4", "Claude", "Stable Diffusion", "ControlNet", "Zapier", "Make.com"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=1949793559012343808"
+
+# ---------------------------------------------------------------- ml
+- group: ml
+  title: "Document Classification for a Legal Firm"
+  sector: "legal"
+  goal: "A firm processing 500+ documents daily had manual classification running at only 71% accuracy, causing filing errors and compliance exposure."
+  approach: "A custom NLP classification pipeline using fine-tuned transformers, OCR preprocessing, and multi-label categorisation, integrated into the existing document management system over REST."
+  impact: "Accuracy from 71% to 97%, processing 8× faster, filing errors near zero, saving 20+ hours of review a week."
+  stack: ["fine-tuned transformers", "OCR", "FastAPI", "Python"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=2030482046148517888"
+
+- group: ml
+  title: "Satellite and GIS Property Valuation Platform"
+  sector: "real estate"
+  goal: "Property evaluation fast enough to act on, rather than a multi-day analyst process."
+  approach: "Computer vision over satellite imagery with QGIS for environmental assessment, Claude for market-trend analysis, and ML models for predictive valuation. Live MLS integration with automated comparative market analysis."
+  impact: "Evaluations in under five minutes — opportunities identified 300% faster at 40% better accuracy than the prior process."
+  stack: ["computer vision", "QGIS", "Claude", "MLS integration", "FastAPI", "Next.js"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=1949792495096324096"
+
+- group: ml
+  title: "Text-to-SQL Agent for Non-Technical Users"
+  goal: "Let people who don't write SQL ask questions of a database and understand the answers."
+  approach: "Translates natural-language questions into SQL, executes them, and explains the results in plain English."
+  stack: ["LLM fine-tuning", "SQL", "LangChain"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=1888487987623555072"
+
+- group: ml
+  title: "LLM Fine-Tuning for Enterprise SQL Automation"
+  goal: "A model that generates correct SQL against a specific enterprise schema, not generic SQL."
+  approach: "Curated question–SQL pairs for the target schema, fine-tuned with LoRA through LangChain, indexed the schema with LlamaIndex for context, and chained execution with natural-language explanation of results. Evaluated SQL accuracy and explanation quality iteratively."
+  stack: ["LoRA", "OpenAI", "LangChain", "LlamaIndex", "SQL"]
+  url: "https://www.upwork.com/freelancers/alizeeshan?p=1888490178289827840"
+
+# Both entries below are on the CV but are no longer published on Upwork — the
+# portfolio now shows 27 items and neither is among them, so their former
+# portfolio links are dead and are deliberately omitted rather than left broken.
+- group: ml
+  title: "Supply Chain Optimization and Demand Forecasting"
+  goal: "Size safety stock against actual demand uncertainty instead of holding a fixed buffer."
+  approach: "Sequence models over IoT telemetry, with Monte Carlo simulation for demand variability."
+  impact: "90%+ forecast accuracy and 35% lower inventory cost."
+  stack: ["LSTM", "Transformers", "IoT telemetry", "Monte Carlo simulation"]
+
+- group: ml
+  title: "Computer Vision Quality Control and Inspection"
+  sector: "manufacturing"
+  goal: "In-line defect detection fast enough to hold production-line speed, wired into the machinery that rejects parts."
+  approach: "YOLOv8 and Open3D detection at the edge, integrated directly with the line's PLCs."
+  impact: "98%+ detection accuracy under 100 ms latency, at 100+ items per minute."
+  stack: ["YOLOv8", "Open3D", "PLC integration", "edge inference"]

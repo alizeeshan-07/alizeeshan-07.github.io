@@ -64,6 +64,20 @@ listed:
     logo: "img/logos/huggingface.svg"
     url: "https://huggingface.co/datasets/agents-course/certificates/resolve/main/certificates/alizeeshan-07/2025-04-25.png"
 
+  # Both of the below appear on the Upwork profile and nowhere else. Upwork's own
+  # skill certification is assessed by a manually reviewed technical test, so it
+  # is a graded credential rather than a course-completion badge.
+  - title: "Skill Certification — Python Development"
+    issuer: "Upwork"
+    date: "Jun 2024"
+    url: "https://www.upwork.com/freelancers/alizeeshan"
+    summary: "Core data structures, sorting and searching algorithms, and functional constructs. Awarded on a manually reviewed technical test."
+
+  - title: "Introduction to Generative AI"
+    issuer: "AWS Educate"
+    date: "Jun 2024"
+    url: "https://www.upwork.com/freelancers/alizeeshan"
+
   - title: "Jira Fundamentals"
     issuer: "Atlassian"
     date: "Aug 2024"
