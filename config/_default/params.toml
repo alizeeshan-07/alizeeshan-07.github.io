@@ -39,6 +39,7 @@ defaultSocialImage = "img/author.jpg"
   showDate = false
   showAuthor = false
   showReadingTime = false
+  showWordCount = false         # theme default is true; "1876 words" under each title
   showTableOfContents = true
   showPagination = false
   showRelatedContent = false
