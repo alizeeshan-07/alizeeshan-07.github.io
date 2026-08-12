@@ -1,30 +1,114 @@
 # Certifications — the single source of truth for the Certifications section.
 #
-# Titles and issuers below are taken from each Credly badge page, not from the
-# CV, since Credly is the authoritative record. Two differ from the CV wording:
-#   - AWS badge is "AWS Certified AI Practitioner Early Adopter"
-#   - "Databases and SQL for Data Science" is issued on Credly by Coursera,
-#     though the course itself is IBM's
+# Two groups, because only some issuers publish verifiable badge artwork:
 #
-# badge  : path under assets/ — the official artwork, downloaded from Credly
-#          rather than hotlinked, so it renders even if their CDN is slow
-# url    : the public Credly page, which is what actually verifies the credential
+#   badged  Credly-issued. Credly hosts the official artwork AND a public
+#           verification page, so these render as full badges.
+#   listed  No badge artwork exists, so these render as a compact line with
+#           the issuer's logo mark. Still linked to a real verification page.
+#
+# Titles, issuers and dates come from each issuer's own verification page where
+# one exists, not from the CV or LinkedIn, since the issuer is authoritative.
+#
+#   badge  path under assets/ — official artwork, downloaded from Credly rather
+#          than hotlinked so it renders even if their CDN is slow
+#   logo   path under assets/ — issuer logo mark, inlined so it follows the
+#          text colour in both light and dark mode. Optional.
+#   url    the verification page. Every entry must have one; a certification
+#          nobody can check is not worth listing.
 
-- title: "AWS Certified AI Practitioner"
-  qualifier: "Early Adopter"
-  issuer: "Amazon Web Services Training and Certification"
-  badge: "img/badges/aws-ai-practitioner.png"
-  url: "https://www.credly.com/badges/d91d539e-6ed8-4623-8423-d74e473337a4"
-  summary: "AI and ML services on AWS, model selection, and responsible-AI practice. Passed before the February 2025 early-adopter cutoff."
+badged:
+  - title: "AWS Certified AI Practitioner"
+    issuer: "Amazon Web Services"
+    date: "Oct 2024 · valid to Oct 2027"
+    badge: "img/badges/aws-ai-practitioner-cert.png"
+    url: "https://www.credly.com/badges/387139fb-f01a-4ff6-9cae-1a1121f796a9"
 
-- title: "Deep Learning Specialization"
-  issuer: "DeepLearning.AI · Coursera"
-  badge: "img/badges/deep-learning-spec.png"
-  url: "https://www.credly.com/badges/33bc87c2-f411-4bba-8d21-063813a8b607"
-  summary: "Convolutional and recurrent networks, transformers, NLP, and transfer learning."
+  - title: "AWS Certified AI Practitioner"
+    qualifier: "Early Adopter"
+    issuer: "Amazon Web Services"
+    date: "Oct 2024"
+    badge: "img/badges/aws-ai-practitioner.png"
+    url: "https://www.credly.com/badges/d91d539e-6ed8-4623-8423-d74e473337a4"
 
-- title: "Databases and SQL for Data Science"
-  issuer: "IBM · Coursera"
-  badge: "img/badges/ibm-databases-sql.png"
-  url: "https://www.credly.com/badges/16c691fc-b4a3-4081-8a2f-f926ca1aa1ce"
-  summary: "Relational database concepts, SQL query construction, and database access from Python."
+  - title: "Databases and SQL for Data Science"
+    issuer: "IBM · Coursera"
+    date: "Jan 2023"
+    badge: "img/badges/ibm-databases-sql.png"
+    url: "https://www.credly.com/badges/16c691fc-b4a3-4081-8a2f-f926ca1aa1ce"
+
+  - title: "Hadoop Foundations — Level 1"
+    issuer: "IBM Skills Network"
+    date: "Jan 2023"
+    badge: "img/badges/ibm-hadoop-foundations.png"
+    url: "https://www.credly.com/badges/7b852144-f326-464b-a04e-4b76f5f4ed12"
+
+  - title: "Deep Learning Specialization"
+    issuer: "DeepLearning.AI · Coursera"
+    date: "Oct 2022"
+    badge: "img/badges/deep-learning-spec.png"
+    url: "https://www.credly.com/badges/33bc87c2-f411-4bba-8d21-063813a8b607"
+
+listed:
+  - title: "Claude Code in Action"
+    issuer: "Anthropic"
+    date: "Mar 2026"
+    logo: "img/logos/anthropic.svg"
+    url: "https://verify.skilljar.com/c/ts497fmyiqbi"
+
+  # Dated from the certificate file itself (.../2025-04-25.png), which is the
+  # issuing artefact. LinkedIn records this as Apr 2024, a year earlier.
+  - title: "AI Agents Fundamentals"
+    issuer: "Hugging Face"
+    date: "Apr 2025"
+    logo: "img/logos/huggingface.svg"
+    url: "https://huggingface.co/datasets/agents-course/certificates/resolve/main/certificates/alizeeshan-07/2025-04-25.png"
+
+  - title: "Jira Fundamentals"
+    issuer: "Atlassian"
+    date: "Aug 2024"
+    logo: "img/logos/atlassian.svg"
+    url: "https://university.atlassian.com/student/award/UuU4Cz8yGNtBaKLjYfXo1aPE"
+
+  - title: "Mathematics for Machine Learning and Data Science"
+    issuer: "DeepLearning.AI · Coursera"
+    date: "Jul 2023"
+    logo: "img/logos/coursera.svg"
+    url: "https://coursera.org/share/6c7efe3b9348486335031fd7d8caf3e1"
+
+  - title: "Practical Data Science on the AWS Cloud"
+    issuer: "DeepLearning.AI · Coursera"
+    date: "Jul 2023"
+    logo: "img/logos/coursera.svg"
+    url: "https://coursera.org/share/80849a319f4602218969f2f406b644c5"
+
+  - title: "Python (Basic)"
+    issuer: "HackerRank"
+    date: "Jul 2023"
+    logo: "img/logos/hackerrank.svg"
+    url: "https://www.hackerrank.com/certificates/f823540cc674"
+
+  - title: "Problem Solving (Basic)"
+    issuer: "HackerRank"
+    date: "Jul 2023"
+    logo: "img/logos/hackerrank.svg"
+    url: "https://www.hackerrank.com/certificates/7f3a1cb469f0"
+
+  - title: "Business Analytics"
+    issuer: "Dice Analytics"
+    date: "Dec 2021"
+    url: "https://dice.pk/app/certificate-public-link/aNtcjzLZQ1nsWpXSiJ6KYM8dkeG9P2BgCUl43R5DIHF7wOTuE0"
+
+# Deliberately not listed, all present on LinkedIn:
+#   - Neural Networks and Deep Learning; Improving Deep Neural Networks
+#     Both are constituent courses of the Deep Learning Specialization above,
+#     so listing them as well counts the same work three times.
+#   - Databases and SQL for Data Science with Python (Coursera) and
+#     Hadoop Foundations - Level 1 (CognitiveClass)
+#     Duplicates of the two Credly badges above, via a second issuer link.
+#   - Introduction to AWS for Non-Engineers 1-4; Programming Foundations
+#     LinkedIn Learning, 2020. Superseded by the AWS certification above.
+#   - Problem Solving (Intermediate), HackerRank
+#     Its "Show credential" link on LinkedIn points at an unrelated third
+#     party's GitHub repository, not to HackerRank. Left off until the real
+#     certificate URL is known, rather than published unverifiable.

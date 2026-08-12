@@ -54,6 +54,14 @@ Machine learning for wireless communication systems: AI, LLMs, edge computing, a
 
 {{< publications group="earlier" >}}
 
+## Awards
+
+**Best Paper, Software Engineering Track** — ComTech 2025
+For *RAG Powered LLMs for QA: Evolution, Challenges, Applications, and Future Directions*.
+
+**$100k+ earned** — Upwork · Feb 2020
+Recognition for passing $100,000 in platform earnings within eighteen months.
+
 ## Talks
 
 **Transformers to IoT Edge Intelligence: The Evolution of Efficient LLMs**
@@ -62,6 +70,10 @@ PhD Qualifier B presentation, SEECS NUST, May 2025.
 ## Research areas
 
 Efficient and agentic LLMs at the edge · AI-native wireless networks (5G-Advanced, 6G) · safe and verifiable autonomy (CMDPs, Lyapunov stability, control barrier functions, conformal prediction) · multi-agent RL · world models and digital twins · federated and distributed learning · integrated sensing and communication
+
+## Languages
+
+Urdu (native) · Punjabi (native) · English (full professional)
 
 ## Selected tools
 

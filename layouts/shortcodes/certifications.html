@@ -1,42 +1,76 @@
 {{- /*
-  Renders certifications from data/certifications.yaml as a badge grid.
+  Renders certifications from data/certifications.yaml.
 
   Usage:  {{< certifications >}}
 
-  Each badge is the official Credly artwork, served locally, and links to the
-  public Credly page so the credential can actually be verified.
+  Two groups, rendered differently because the issuers differ in what they
+  publish. `badged` entries are Credly-issued and get the official artwork;
+  `listed` entries have no badge artwork, so they get the issuer's logo mark.
+  Both link to a real verification page.
 
-  Class note: only utilities the theme already compiles are used here. Blowfish's
-  Tailwind build emits nothing for classes it does not use itself, so invented
-  ones fail silently.
+  Class note: layout lives in assets/css/custom.css under .certs-*, because
+  Blowfish's Tailwind build only emits utilities the theme itself uses — the
+  grid classes this needs (grid-cols-*, gap-6, w-20) compile to nothing.
+  Colour utilities used below are all confirmed present in the bundle.
 */ -}}
 {{- $certs := hugo.Data.certifications -}}
 {{- if not $certs -}}
   {{- errorf "certifications shortcode: data/certifications.yaml is missing or empty" -}}
 {{- end -}}
+
 <div class="not-prose">
-  {{- range $certs }}
-  {{- $img := resources.Get .badge -}}
-  {{- if not $img -}}
-    {{- errorf "certifications: badge image not found in assets: %s" .badge -}}
-  {{- end -}}
-  <div class="mb-6 flex items-center gap-4">
-    <a href="{{ .url }}" target="_blank" rel="noopener" class="shrink-0">
-      <img src="{{ ($img.Resize "160x").RelPermalink }}"
-           width="80" height="80"
-           alt="{{ .title }} badge, issued by {{ .issuer }}"
-           class="nozoom">
-    </a>
-    <div class="min-w-0">
-      <div class="font-semibold text-neutral-800 dark:text-neutral-100">
-        <a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>
-        {{- with .qualifier }} <span class="text-sm font-normal text-neutral-500 dark:text-neutral-400">({{ . }})</span>{{ end -}}
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">{{ .issuer }}</div>
-      {{- with .summary }}
-      <div class="mt-1 text-sm text-neutral-600 dark:text-neutral-300">{{ . | markdownify }}</div>
-      {{- end }}
-    </div>
+
+  <div class="certs-grid">
+    {{- range $certs.badged }}
+    {{- $img := resources.Get .badge -}}
+    {{- if not $img -}}{{- errorf "certifications: badge image not found in assets: %s" .badge -}}{{- end -}}
+    <figure>
+      <a href="{{ .url }}" target="_blank" rel="noopener"
+         title="Verify on Credly: {{ .title }}">
+        <img src="{{ ($img.Resize "220x").RelPermalink }}"
+             width="220" height="220"
+             alt="{{ .title }} badge, issued by {{ .issuer }}"
+             class="certs-badge nozoom" loading="lazy">
+      </a>
+      <figcaption>
+        <a href="{{ .url }}" target="_blank" rel="noopener"
+           class="font-semibold text-neutral-800 dark:text-neutral-100">{{ .title }}</a>
+        {{- with .qualifier }}
+        <span class="certs-qualifier text-neutral-500 dark:text-neutral-400">{{ . }}</span>
+        {{- end }}
+        <span class="certs-meta text-neutral-500 dark:text-neutral-400">
+          {{ .issuer }}{{ with .date }} · {{ . }}{{ end }}
+        </span>
+      </figcaption>
+    </figure>
+    {{- end }}
   </div>
+
+  {{- with $certs.listed }}
+  <ul class="certs-list">
+    {{- range . }}
+    <li class="certs-row">
+      {{- with .logo }}
+        {{- $svg := resources.Get . -}}
+        {{- if not $svg -}}{{- errorf "certifications: logo not found in assets: %s" . -}}{{- end -}}
+        {{- /* Inline rather than <img> so the mark follows currentColor and
+               stays legible when the site flips to dark mode. */ -}}
+        {{- $svg.Content
+            | replaceRE `<svg ` `<svg fill="currentColor" aria-hidden="true" class="certs-logo" `
+            | safeHTML -}}
+      {{- else -}}
+        <span class="certs-logo certs-logo-empty" aria-hidden="true"></span>
+      {{- end }}
+      <span class="min-w-0">
+        <a href="{{ .url }}" target="_blank" rel="noopener"
+           class="text-neutral-800 dark:text-neutral-100">{{ .title }}</a>
+        <span class="certs-meta text-neutral-500 dark:text-neutral-400">
+          {{ .issuer }}{{ with .date }} · {{ . }}{{ end }}
+        </span>
+      </span>
+    </li>
+    {{- end }}
+  </ul>
   {{- end }}
+
 </div>
