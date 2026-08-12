@@ -56,11 +56,41 @@ AI-powered applications: chatbots, automation workflows, and SaaS platforms.
 - Generative AI (LLMs, vision, speech), NLP, RAG, multi-agent orchestration, MCP integration, and model fine-tuning.
 - Inference optimization, cloud-native deployment (AWS, Azure, GCP), MLOps pipelines, API-first architectures.
 
-## Senior Machine Learning Engineer — Upwork
+## Independent AI Consultant — Upwork
 
-*Remote · Dec 2014 – Present*
+*Remote · Dec 2014 – Present · [Top Rated Plus](https://www.upwork.com/freelancers/alizeeshan)*
 
-100+ completed engagements. AI strategy and solution design, SaaS-based AI applications, generative AI, domain-specific fine-tuning, multi-agent orchestration, RAG, inference optimization, and AI-powered process automation.
+**130 contracts · 1,675 hours · 100% Job Success · 4.97/5 across 103 reviews.** Twenty-nine of these engagements are written up on the [Projects](/projects/) page.
+
+Consulting work falls into three areas:
+
+- **AI strategy and architecture** — deciding where LLMs, agents, and automation actually return the most for a given business, then designing the system to get there.
+- **Technical due diligence** — auditing existing deployments and finding the failure points in RAG pipelines and chatbot systems.
+- **Build-versus-buy** — when off-the-shelf tooling is enough, and what custom development genuinely requires.
+
+Sectors: healthcare, SaaS, fintech, legal services, e-commerce, and real estate.
+
+### Service packages
+
+Fixed-scope engagements offered through [Upwork's project catalog](https://www.upwork.com/freelancers/alizeeshan):
+
+| Package | From | Delivery |
+|---|---|---|
+| Enterprise multi-agent workflow system | $1,500 | 7 days |
+| End-to-end enterprise AI application | $999 | 14 days |
+| Custom AI agent with LangGraph, MCP & tool use | $500 | 7 days |
+| Full-stack AI SaaS MVP to production | $499 | 10 days |
+| Custom RAG pipeline with Pinecone & LangChain | $400 | 3 days |
+| AI customer-support chatbot with RAG | $199 | 3 days |
+| AI marketing & outbound call system | $199 | 3 days |
+| n8n workflow automation with LLM integration | $149 | 3 days |
+| On-call AI virtual assistant | $99 | 3 days |
+
+## AI Prompt Engineer — Smart Digital Assets S.r.l
+
+*Pisa, Italy (remote) · May 2022 – Jun 2024*
+
+Developed and optimized prompts for generative models in content creation — crafting prompts, refining them against measured output quality, and working with cross-functional teams on varied content goals.
 
 ## Sr. Algorithm Engineer — Six Atomic
 
@@ -96,9 +126,7 @@ Operated national telecom core networks — carrier-scale infrastructure, runnin
 
 ## Applied AI projects
 
-Delivered client engagements. Figures are as reported by the clients, and each project links to its portfolio entry.
-
-{{< projects >}}
+Twenty-nine delivered client engagements — agentic systems, RAG, healthcare AI, voice, SaaS platforms, and applied ML — are written up individually on the [Projects](/projects/) page.
 
 ## Research projects
 
