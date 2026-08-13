@@ -9,9 +9,12 @@
 #          resize. Logos keep their native aspect ratio and share a common
 #          height, so a wide wordmark and a square crest carry equal weight.
 #
-# Every logo sits on a white plaque. The set mixes light-on-dark and
-# dark-on-light marks, so without one, Six Atomic vanished against the light
-# theme and the UET crest vanished against the dark one.
+#   invert  optional: "light" or "dark" — the theme in which this mark needs its
+#           luminance flipped to stay visible. Only ever set on a MONOCHROME
+#           mark; inverting a coloured logo shifts its hue and misrepresents the
+#           brand. Measured saturation before setting it: Six Atomic 0, UET 2,
+#           versus 74-161 for the NATO, ZONG and Adept Tech marks, which are
+#           therefore left alone in both themes.
 #
 # Not listed, for want of a usable logo: AI Workforce, NeuralStacks, Imperium
 # Solutions, and Huzhou University. Adding one is a single entry here.
@@ -31,6 +34,8 @@
 - name: "Six Atomic"
   label: "Six Atomic, Singapore — Sr. Algorithm Engineer"
   logo: "img/affiliations/six-atomic.png"
+  # Pure white mark (luminance 255), designed for a dark background.
+  invert: "light"
 
 - name: "ZONG CMPak"
   label: "ZONG CMPak — Core Networks, seven years"
@@ -39,3 +44,5 @@
 - name: "University of Engineering and Technology, Lahore"
   label: "UET Lahore — BSc Electrical Engineering"
   logo: "img/affiliations/uet-lahore.png"
+  # Near-black monochrome crest (luminance 109, saturation 2).
+  invert: "dark"

@@ -40,8 +40,16 @@
            original and let CSS do the (smaller) scaling. */ -}}
     {{- $src = $res.RelPermalink -}}
   {{- end -}}
+  {{- /* Only monochrome marks carry an invert flag — see the data file. */ -}}
+  {{- $inv := "" -}}
+  {{- with .invert -}}
+    {{- if not (in (slice "light" "dark") .) -}}
+      {{- errorf "affiliations: invert must be \"light\" or \"dark\", got %q" . -}}
+    {{- end -}}
+    {{- $inv = printf " aff-invert-%s" . -}}
+  {{- end -}}
   <li class="aff-item" tabindex="0">
-    <img class="aff-logo nozoom" src="{{ $src }}" alt="{{ .name }}" loading="lazy">
+    <img class="aff-logo nozoom{{ $inv }}" src="{{ $src }}" alt="{{ .name }}" loading="lazy">
     <span class="aff-label">{{ .label | default .name }}</span>
   </li>
   {{- end }}
