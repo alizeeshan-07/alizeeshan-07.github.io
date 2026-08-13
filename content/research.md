@@ -3,9 +3,9 @@ title: "Research"
 showTableOfContents: true
 ---
 
-My work pairs **systems engineering with provable guarantees** (CMDP / Lyapunov / finite-time bounds), organized around three themes.
+My work sits where **agentic AI meets edge deployment**: systems that reason, but under hard limits on latency, energy, bandwidth, and cost — and that ship with measurable guarantees rather than benchmark scores. Three themes.
 
-I frame these systems as a **timescale hierarchy**: slow, adapting reasoners (LLM agents) set intent and plans over seconds to minutes; fast learned controllers (MARL/DRL) handle scheduling, power, and resource allocation in milliseconds; and control theory (CMDPs, Lyapunov analysis, shields and control barrier functions) guarantees safety at every layer — all trained and certified inside digital twins before touching reality. The unifying thread is *closed-loop systems where learning happens under hard physical, communication, energy, or cost budgets.*
+I frame these systems as a **timescale hierarchy**: slow, adapting reasoners (LLM agents) set intent and plans over seconds to minutes; fast learned controllers (multi-agent and deep RL) handle scheduling, power, and resource allocation in milliseconds; and a **runtime assurance layer** keeps every level inside its safety envelope — all trained and validated inside digital twins before touching real hardware. The unifying thread is *closed-loop systems where learning happens under hard physical, communication, energy, or cost budgets.*
 
 In short: **the learning does the optimizing, the mathematics does the promising.**
 
@@ -25,9 +25,9 @@ I work on learning-driven resource management for 5G-Advanced and 6G: deep reinf
 
 **Representative work:** DDPG-based sum-rate optimization for opportunistic backscatter NOMA networks (*IEEE GLOBECOM 2023*).
 
-## Safe & verifiable autonomy
+## Trustworthy & verifiable AI
 
-Learned controllers optimize well but promise nothing. I attach the promises: constrained Markov decision processes, Lyapunov stability, control-barrier safety filters, and conformal prediction — applied to UAV systems, integrated sensing and communication, and network control, so that a learned policy can be deployed with a certificate instead of a hope.
+Learned policies optimize well but promise nothing. I attach the promises: **runtime guardrails** that hold a policy inside its safety envelope, **constrained policy optimization** so limits are trained in rather than bolted on, and **calibrated uncertainty** so a model knows when to abstain or escalate instead of confidently guessing. Applied to UAV autonomy, integrated sensing and communication, and network control — so a learned policy ships with a certificate rather than a hope, and keeps it under distribution shift.
 
 ---
 
@@ -43,7 +43,7 @@ A rule I work by: **never propose a language model where a millisecond control p
 
 **Edge & serving** — vLLM · llama.cpp · ExecuTorch · Jetson Orin · SmolVLM / Qwen-VL class models
 
-**Control & guarantees** — CBF-QP safety filters (OSQP/cvxpy) · constrained MDPs · conformal prediction · two-timescale stochastic approximation
+**Safety & assurance** — runtime safety filters (OSQP/cvxpy) · constrained policy optimization · conformal prediction · uncertainty quantification · distribution-shift robustness
 
 **Methodology** — pre-registered hypotheses · explicit ablations · causal DAGs · validated LLM-as-judge evaluation · negative results treated as results
 
