@@ -90,7 +90,7 @@ PhD Qualifier B presentation, SEECS NUST, May 2025.
 
 ## Research areas
 
-Efficient and agentic LLMs at the edge · AI-native wireless networks (5G-Advanced, 6G) · safe and verifiable autonomy (CMDPs, Lyapunov stability, control barrier functions, conformal prediction) · multi-agent RL · world models and digital twins · federated and distributed learning · integrated sensing and communication
+Edge AI and on-device inference · efficient and agentic LLMs · small language models, quantization, and distillation · inference-time compute allocation · AI-native wireless networks (5G-Advanced, 6G) · trustworthy and verifiable AI (runtime guardrails, constrained policy optimization, conformal prediction) · multi-agent RL · world models and digital twins · federated and distributed learning · integrated sensing and communication
 
 ## Skills
 
