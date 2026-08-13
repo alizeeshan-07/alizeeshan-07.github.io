@@ -212,21 +212,28 @@
   margin: 0;
 }
 
-/* Every logo sits on white. The set mixes light-on-dark and dark-on-light
-   marks, so on a single background one or the other always disappears —
-   Six Atomic vanished on the light theme, the UET crest on the dark one. */
+/* No plaque behind the logos — they sit directly on the page in both themes.
+   The set mixes light-on-dark and dark-on-light marks, so the two that would
+   otherwise disappear are handled by per-logo inversion below rather than by
+   putting a white box behind all six. */
 .aff-logo {
   display: block;
   /* Sized so all six fit one row at the theme's 624px article width. At 3rem
      the widths total 694px and the last logo orphans onto a line by itself;
-     2.5rem brings the total to ~577px. Still wraps cleanly on narrow screens. */
+     2.5rem brings the total to ~581px. Still wraps cleanly on narrow screens. */
   height: 2.5rem;
   width: auto;
   max-width: 11rem;
-  background: #fff;
-  border-radius: 0.375rem;
-  padding: 0.5rem 0.7rem;
-  box-sizing: content-box;
+}
+
+/* Flip only the marks flagged in data/affiliations.yaml, and only in the theme
+   where they would vanish. Both are monochrome (measured saturation 0 and 2),
+   so inverting changes lightness and nothing else. The coloured marks — NATO,
+   ZONG, Adept Tech — are never touched, since inverting those would shift hue
+   and misrepresent the brand. */
+.dark .aff-invert-dark,
+html:not(.dark) .aff-invert-light {
+  filter: invert(1);
 }
 
 .aff-label {
