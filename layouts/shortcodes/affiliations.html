@@ -1,0 +1,48 @@
+{{- /*
+  Renders the affiliation logo row from data/affiliations.yaml.
+
+  Usage:  {{< affiliations >}}
+
+  Follows the reference site's pattern — a centred wrapping row of organisation
+  logos with a label on hover — with three deliberate differences:
+
+    1. Data-driven. The reference pastes ~8 lines of raw HTML per logo into the
+       markdown, so adding one means duplicating markup. Here it is one entry.
+    2. Real alt text. The reference has copy-paste leftovers, with three of six
+       images reading "GT Logo" or "Georgia Tech" regardless of the actual
+       organisation. Alt text comes from the name field.
+    3. Reachable without a mouse. A hover-only tooltip is invisible to keyboard
+       and touch users, so the trigger is focusable and :focus-visible shows the
+       label too.
+
+  Class note: layout lives in assets/css/custom.css under .aff-*, since
+  Blowfish's Tailwind build only emits utilities the theme itself uses.
+*/ -}}
+{{- $items := hugo.Data.affiliations -}}
+{{- if not $items -}}
+  {{- errorf "affiliations shortcode: data/affiliations.yaml is missing or empty" -}}
+{{- end -}}
+<ul class="aff-row not-prose">
+  {{- range $items }}
+  {{- $res := resources.Get .logo -}}
+  {{- if not $res -}}
+    {{- errorf "affiliations: logo not found in assets: %s" .logo -}}
+  {{- end -}}
+  {{- /* Hugo cannot resize SVG, and does not need to — serve it as-is. */ -}}
+  {{- $src := "" -}}
+  {{- if eq $res.MediaType.SubType "svg" -}}
+    {{- $src = $res.RelPermalink -}}
+  {{- else if gt $res.Height 200 -}}
+    {{- $src = ($res.Resize "x200").RelPermalink -}}
+  {{- else -}}
+    {{- /* Resize would happily scale UP — the ZONG wordmark is only 64px tall
+           at source, and enlarging it to 200 just interpolates blur. Serve the
+           original and let CSS do the (smaller) scaling. */ -}}
+    {{- $src = $res.RelPermalink -}}
+  {{- end -}}
+  <li class="aff-item" tabindex="0">
+    <img class="aff-logo nozoom" src="{{ $src }}" alt="{{ .name }}" loading="lazy">
+    <span class="aff-label">{{ .label | default .name }}</span>
+  </li>
+  {{- end }}
+</ul>

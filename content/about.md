@@ -3,25 +3,19 @@ title: "About"
 showTableOfContents: false
 ---
 
-I am a PhD candidate at **SEECS, NUST**, in the Information, Processing, and Transmission (IPT) Lab under **Dr. Syed Ali Hassan**, working on efficient and agentic large language models at the network edge.
+Hi, I am **Ali Zeeshan** — a PhD candidate at **SEECS, NUST**, working in the Information, Processing and Transmission Lab under **Dr. Syed Ali Hassan**, and **Head of AI at Adept Tech Solutions**. My research is on efficient and agentic large language models at the network edge: how a model should decide whether to answer on your phone, at a base station, or in the cloud, under real budgets for latency, bandwidth, and cost. There is more detail on the [Research](/research/) page.
 
-My research sits where wireless systems engineering meets machine learning: language-model strategists guiding millisecond reinforcement-learning controllers, device–edge–cloud inference under latency and bandwidth budgets, and control-theoretic guarantees (constrained MDPs, Lyapunov analysis, barrier functions, conformal prediction) that make learned systems safe to deploy.
+Alongside the research, I build. Since 2014 I have delivered **130 client contracts** — AI agents, retrieval systems, voice assistants, and a fair number of SaaS platforms — across healthcare, legal services, real estate, and B2B sales. Twenty-nine of them are written up on [Projects](/projects/). Seven of those years overlapped with operating national telecom core networks at **ZONG CMPak**, which is where I learned what "production" actually costs when the thing you broke is carrying a country's phone calls.
 
-I pair research with practice: over a decade in industry, including seven years operating national telecom core networks at **ZONG CMPak** (2015–2021, latterly as Sr. Engineer, NSS) and, currently, serving as **Head of AI at Adept Tech Solutions Inc.** (Silicon Valley, remote) and **AI Strategy Lead at AI Workforce** (UK). That work is multi-agent orchestration, Model Context Protocol integrations, RAG pipelines, and fine-tuned domain-specific models — with inference optimization, quantization, and multi-environment deployment across cloud, hybrid, and edge, under ethical-AI frameworks and MLOps practice. Fourteen production systems since 2022. I also contribute to the **NATO SPS project SHAILLA** on securing next-generation HAPS networks, and to a **NUST – Huzhou University** collaboration on machine learning for 6G wireless systems.
+In 2010 I was recommended by the Inter Services Selection Board for a commission in the Pakistan Air Force as a General Duty Pilot. I went to **UET Lahore** to read electrical engineering instead — but I have never quite lost the interest in things that fly, which is probably why I ended up working on high-altitude platform stations for [NATO SPS](/work/#research-projects).
 
-More broadly, I work at the intersection of **wireless systems, machine-learning theory, foundation models, and edge/federated learning**. My unifying thread is *closed-loop systems where learning happens under hard physical, communication, energy, or cost budgets* — engineered end-to-end and backed by provable guarantees.
+Outside of engineering: badminton, hiking, and considerably more video games than I intend to justify. I live in Lahore and speak Urdu, Punjabi, and English.
 
-I frame these systems as a **timescale hierarchy**: slow, adapting reasoners (LLM agents) set intent and plans over seconds to minutes; fast learned controllers (MARL/DRL) handle scheduling, power, and resource allocation in milliseconds; and control theory (CMDPs, Lyapunov, shields/CBFs) guarantees safety at every layer — all trained and certified inside digital twins before touching reality.
+I write occasionally about AI engineering on [Substack](https://alizeeshan.substack.com) and [Medium](https://medium.com/@dexterous02) — those pieces are collected on the [Articles](/articles/) page.
 
-In short: **the learning does the optimizing, the mathematics does the promising.**
+## Current and past affiliations
 
-**Roles.** PhD candidate, IPT Lab, SEECS NUST · Head of AI and Emerging Technologies at Adept Tech Solutions Inc. (Silicon Valley, remote) · AI Strategy Lead at AI Workforce (UK) · founder of NeuralStacks · independent AI consultant.
-
-**Languages.** Urdu and Punjabi (native) · English (full professional).
-
-**Education.** PhD in Electrical Engineering (AI & Autonomous Systems), SEECS NUST — Jan 2024 to present, CGPA 4.0/4.0. MSc in Electrical Engineering (AI & Autonomous Systems), SEECS NUST — 2021–2023, *with Distinction*, CGPA 4.0/4.0. BSc in Electrical Engineering (Electronics & Telecommunications), UET Lahore — 2010–2014, CGPA 3.34/4.0. Earlier work in smart-grid control.
-
-**Methodological signature.** Explicit ablations, pre-registered hypotheses, causal-inference rigor, validated evaluation, and negative results given equal billing with positive ones.
+{{< affiliations >}}
 
 ## Contact
 
