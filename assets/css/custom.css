@@ -190,6 +190,75 @@
   background: rgba(var(--color-neutral-700), 1);
 }
 
+/* Affiliation logo row ----------------------------------------------------- */
+
+.aff-row {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* Column gap kept tight: at 1.25rem the six logos total 599px against a
+     601px column — it fits, but with 2px to spare, so any small change in
+     rendering pushes the last one onto its own line. 1rem leaves real slack. */
+  gap: 1.25rem 1rem;
+  text-align: center;
+}
+
+.aff-item {
+  position: relative;
+  margin: 0;
+}
+
+/* Every logo sits on white. The set mixes light-on-dark and dark-on-light
+   marks, so on a single background one or the other always disappears —
+   Six Atomic vanished on the light theme, the UET crest on the dark one. */
+.aff-logo {
+  display: block;
+  /* Sized so all six fit one row at the theme's 624px article width. At 3rem
+     the widths total 694px and the last logo orphans onto a line by itself;
+     2.5rem brings the total to ~577px. Still wraps cleanly on narrow screens. */
+  height: 2.5rem;
+  width: auto;
+  max-width: 11rem;
+  background: #fff;
+  border-radius: 0.375rem;
+  padding: 0.5rem 0.7rem;
+  box-sizing: content-box;
+}
+
+.aff-label {
+  position: absolute;
+  bottom: calc(100% + 0.4rem);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  white-space: nowrap;
+  border-radius: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.72rem;
+  color: #fff;
+  background: rgba(var(--color-neutral-900), 0.95);
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+/* :focus-visible as well as :hover, so the label is reachable by keyboard.
+   A hover-only tooltip is invisible to anyone not using a mouse. */
+.aff-item:hover .aff-label,
+.aff-item:focus-visible .aff-label {
+  opacity: 1;
+}
+
+.aff-item:focus-visible {
+  outline: 2px solid rgba(var(--color-primary-600), 1);
+  outline-offset: 3px;
+  border-radius: 0.375rem;
+}
+
 /* Justify body copy in articles. */
 .prose {
   text-align: justify;

@@ -5,6 +5,12 @@ showTableOfContents: true
 
 My work pairs **systems engineering with provable guarantees** (CMDP / Lyapunov / finite-time bounds), organized around three themes.
 
+I frame these systems as a **timescale hierarchy**: slow, adapting reasoners (LLM agents) set intent and plans over seconds to minutes; fast learned controllers (MARL/DRL) handle scheduling, power, and resource allocation in milliseconds; and control theory (CMDPs, Lyapunov analysis, shields and control barrier functions) guarantees safety at every layer — all trained and certified inside digital twins before touching reality. The unifying thread is *closed-loop systems where learning happens under hard physical, communication, energy, or cost budgets.*
+
+In short: **the learning does the optimizing, the mathematics does the promising.**
+
+**Methodological signature.** Explicit ablations, pre-registered hypotheses, causal-inference rigor, validated evaluation, and negative results given equal billing with positive ones.
+
 ## Efficient & agentic LLMs at the edge
 
 *Thesis spine.*

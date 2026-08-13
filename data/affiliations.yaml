@@ -1,0 +1,41 @@
+# Current and past affiliations — the logo row on the About page.
+#
+# Current affiliations first, then reverse chronological, so the row reads as a
+# trajectory rather than an unordered pile.
+#
+#   name   the organisation, used as the image alt text
+#   label  what shows on hover — the relationship, not just the name again
+#   logo   path under assets/. SVG is served as-is; rasters go through Hugo's
+#          resize. Logos keep their native aspect ratio and share a common
+#          height, so a wide wordmark and a square crest carry equal weight.
+#
+# Every logo sits on a white plaque. The set mixes light-on-dark and
+# dark-on-light marks, so without one, Six Atomic vanished against the light
+# theme and the UET crest vanished against the dark one.
+#
+# Not listed, for want of a usable logo: AI Workforce, NeuralStacks, Imperium
+# Solutions, and Huzhou University. Adding one is a single entry here.
+
+- name: "National University of Sciences and Technology"
+  label: "SEECS, NUST — PhD & MSc (current)"
+  logo: "img/affiliations/nust.svg"
+
+- name: "Adept Tech Solutions"
+  label: "Adept Tech Solutions — Head of AI (current)"
+  logo: "img/affiliations/adept-tech.png"
+
+- name: "NATO Science for Peace and Security"
+  label: "NATO SPS — project SHAILLA (current)"
+  logo: "img/affiliations/nato.png"
+
+- name: "Six Atomic"
+  label: "Six Atomic, Singapore — Sr. Algorithm Engineer"
+  logo: "img/affiliations/six-atomic.png"
+
+- name: "ZONG CMPak"
+  label: "ZONG CMPak — Core Networks, seven years"
+  logo: "img/affiliations/zong.png"
+
+- name: "University of Engineering and Technology, Lahore"
+  label: "UET Lahore — BSc Electrical Engineering"
+  logo: "img/affiliations/uet-lahore.png"
