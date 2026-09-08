@@ -1,0 +1,79 @@
+# IEEE memberships — the logo row and text list under Professional memberships.
+#
+# Split deliberately:
+#
+#   societies    Paid IEEE Society memberships. These get logos, because they
+#                are substantive: you join and pay per society.
+#   communities  IEEE Technical Communities and Technical Committees. Free to
+#                join for any IEEE member, so they are listed as text. Giving
+#                each one a logo would put eleven more marks on the page and
+#                imply they carry the same weight as a society membership.
+#
+# Ordered by relevance to the published work rather than alphabetically —
+# ComSoc first, since IEEE Communications Magazine and IEEE OJCOMS are both
+# ComSoc publications.
+#
+#   bg   which background this mark was drawn for, so it renders unaltered:
+#          light -> white plaque. VTS, ITSoc, AESS and CIS are dark-ink marks.
+#          dark  -> dark plaque. ComSoc, SPS and Computer Society publish only
+#                   white/reverse versions (literally style="fill:#fff"), which
+#                   are invisible on white.
+#
+# IEEE's identity guidelines prohibit recolouring the marks, and SPS carries a
+# radial gradient besides, so the per-logo inversion used in the affiliations
+# row is not available here. Giving each mark its intended backing keeps all
+# eight legible on both themes without touching the artwork.
+
+societies:
+  - name: "IEEE"
+    label: "IEEE — Student Member"
+    logo: "img/memberships/ieee.svg"
+    bg: "light"
+
+  - name: "IEEE Communications Society"
+    label: "IEEE Communications Society (ComSoc)"
+    logo: "img/memberships/comsoc.svg"
+    bg: "dark"
+
+  - name: "IEEE Vehicular Technology Society"
+    label: "IEEE Vehicular Technology Society (VTS)"
+    logo: "img/memberships/vts.svg"
+    bg: "light"
+
+  - name: "IEEE Signal Processing Society"
+    label: "IEEE Signal Processing Society (SPS)"
+    logo: "img/memberships/sps.svg"
+    bg: "dark"
+
+  - name: "IEEE Information Theory Society"
+    label: "IEEE Information Theory Society (ITSoc)"
+    logo: "img/memberships/itsoc.svg"
+    bg: "light"
+
+  - name: "IEEE Aerospace and Electronic Systems Society"
+    label: "IEEE Aerospace and Electronic Systems Society (AESS)"
+    logo: "img/memberships/aess.svg"
+    bg: "light"
+
+  - name: "IEEE Computer Society"
+    label: "IEEE Computer Society"
+    logo: "img/memberships/computer-society.png"
+    bg: "dark"
+
+  - name: "IEEE Computational Intelligence Society"
+    label: "IEEE Computational Intelligence Society (CIS)"
+    logo: "img/memberships/cis.png"
+    bg: "light"
+
+communities:
+  - "Future Networks"
+  - "Internet of Things"
+  - "Digital Reality"
+  - "Public Safety Technology"
+  - "Entrepreneurship"
+  - "Computer Society: High Performance Computing"
+  - "Computer Society: Intelligent Informatics"
+  - "Computer Society: Quantum"
+  - "Computer Society: Digital Privacy Task Force"
+  - "Robotics & Automation Society: Machine Learning for Automation"
+  - "Engineering in Medicine & Biology Society: Neural & Rehabilitation Engineering"

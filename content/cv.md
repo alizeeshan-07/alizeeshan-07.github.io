@@ -56,6 +56,10 @@ Seven years operating national telecom core networks. Maintenance and optimizati
 
 {{< certifications >}}
 
+## Professional memberships
+
+{{< memberships >}}
+
 ## Research projects
 
 **NATO SPS project SHAILLA** · Sep 2025 – ongoing · Canada, Türkiye, Pakistan
