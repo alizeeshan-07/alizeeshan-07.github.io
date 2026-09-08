@@ -1,0 +1,53 @@
+{{- /*
+  Renders IEEE memberships from data/memberships.yaml.
+
+  Usage:  {{< memberships >}}
+
+  Reuses the .aff-* layout from the affiliations row rather than duplicating it,
+  with one modifier: .aff-plaque puts the logos on white. Unlike the affiliation
+  marks — mostly monochrome, so they can be inverted per theme — IEEE marks are
+  multi-colour (SPS uses gradients) and IEEE's identity guidelines prohibit
+  recolouring them, so a plaque is the only treatment that keeps every mark
+  legible on both themes without altering it.
+
+  Societies get logos; Technical Communities are free to join and render as
+  text, so the row does not imply they carry equal weight.
+*/ -}}
+{{- $data := hugo.Data.memberships -}}
+{{- if not $data -}}
+  {{- errorf "memberships shortcode: data/memberships.yaml is missing or empty" -}}
+{{- end -}}
+
+{{- with $data.societies }}
+<ul class="aff-row aff-plaque not-prose">
+  {{- range . }}
+  {{- $res := resources.Get .logo -}}
+  {{- if not $res -}}
+    {{- errorf "memberships: logo not found in assets: %s" .logo -}}
+  {{- end -}}
+  {{- $src := "" -}}
+  {{- if eq $res.MediaType.SubType "svg" -}}
+    {{- $src = $res.RelPermalink -}}
+  {{- else if gt $res.Height 200 -}}
+    {{- $src = ($res.Resize "x200").RelPermalink -}}
+  {{- else -}}
+    {{- $src = $res.RelPermalink -}}
+  {{- end -}}
+  {{- $bg := .bg | default "light" -}}
+  {{- if not (in (slice "light" "dark") $bg) -}}
+    {{- errorf "memberships: bg must be \"light\" or \"dark\", got %q" $bg -}}
+  {{- end -}}
+  <li class="aff-item" tabindex="0">
+    <img class="aff-logo nozoom aff-bg-{{ $bg }}" src="{{ $src }}" alt="{{ .name }}" loading="lazy">
+    <span class="aff-label">{{ .label | default .name }}</span>
+  </li>
+  {{- end }}
+</ul>
+{{- end }}
+
+{{- with $data.communities }}
+<p class="memb-communities text-neutral-500 dark:text-neutral-400">
+  <span class="memb-communities-label">IEEE Technical Communities &amp; Committees</span>
+  {{ delimit . " · " }}
+</p>
+{{- end }}
