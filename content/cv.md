@@ -72,6 +72,10 @@ Machine learning for wireless communication systems: AI, LLMs, edge computing, a
 
 {{< publications group="accepted" >}}
 
+**In progress**
+
+{{< publications group="inprogress" >}}
+
 {{< publications group="thesis" >}}
 
 {{< publications group="earlier" >}}

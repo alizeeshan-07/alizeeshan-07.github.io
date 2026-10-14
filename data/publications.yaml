@@ -1,17 +1,32 @@
 # Publication list — the single source of truth for the Publications page.
 #
-# RULE: a paper appears here ONLY once it is accepted or posted to arXiv.
-# Never before. In-progress manuscripts stay out.
-#
 # Bibliographic detail (titles, author order, volume, pages, DOI) is taken from
 # Crossref, i.e. the publisher's own deposited record, rather than from a CV or
 # a profile page. Where they disagreed, Crossref won.
 #
 # To add a paper: append an entry below. That is the whole change.
-#   group    accepted | thesis | earlier   (which heading it renders under)
+#   group    accepted | inprogress | thesis | earlier  (which heading it renders under)
 #   sortkey  YYYYMM as an integer — sorts within a group, newest first
-#   date     display string, e.g. "September 2025"
+#   date     display string, e.g. "September 2025". Omit it and nothing renders.
+#   status   optional chip, e.g. "Under revision". Used by the inprogress group.
 #   links    optional list of {name, url}
+#
+# DOIs: only the four published papers have one. Crossref and arXiv were both
+# queried by title for every manuscript in the inprogress group on 14 Oct 2026
+# and none is indexed anywhere, which is expected — they are not out yet. Add
+# the DOI to an entry at the moment it is assigned, not before.
+
+# Accepted but not yet in IEEE Xplore, so there is no DOI to link yet. Status
+# per the acceptance notification; note the CV tracking sheet still records this
+# one as "Submitted", which is the stale entry of the two.
+- group: accepted
+  sortkey: 202612
+  year: 2026
+  date: "December 2026"
+  title: "FedLoRA-AE: Federated End-to-End Physical-Layer Autoencoders with Low-Rank Per-Cell Adapters for 3GPP CDL Profiles"
+  venue: "IEEE Global Communications Conference (GLOBECOM), Macau"
+  status: "Accepted — to appear"
+  takeaway: "Parameter-efficient federated fine-tuning of a learned physical layer, with a per-cell low-rank adapter for each 3GPP clustered-delay-line profile."
 
 - group: accepted
   sortkey: 202509
@@ -72,6 +87,51 @@
   links:
     - name: "DOI"
       url: "https://doi.org/10.1109/GLOBECOM54140.2023.10437095"
+
+# Manuscripts under review or in preparation. Submission and review dates are
+# deliberately not displayed — they date-stamp how long a paper has been sitting
+# with reviewers, which tells a reader nothing useful about the work. The dates
+# survive only as sortkeys, so the list stays in a sensible order: furthest
+# along first, with the unsubmitted manuscript last.
+#
+# Author lists are omitted rather than guessed. Fill them in from the submitted
+# manuscripts when convenient.
+
+- group: inprogress
+  sortkey: 202609
+  year: 2026
+  title: "Geometry-Aware World Models for Resource Management in LEO Satellite-Terrestrial Networks"
+  venue: "Journal article"
+  status: "Under revision"
+
+- group: inprogress
+  sortkey: 202608
+  year: 2026
+  title: "Robust Power Minimization for Secure RIS-Assisted HAPS Downlink Under Imperfect CSI"
+  venue: "Journal article"
+  status: "Submitted"
+
+- group: inprogress
+  sortkey: 202607
+  year: 2026
+  title: "Know When to Look Up: Transmitted Resolution as an Escalation Action for Multimodal Models at the Edge"
+  venue: "Journal article"
+  status: "Submitted"
+
+- group: inprogress
+  sortkey: 202606
+  year: 2026
+  title: "Safety-Constrained DRL for UAV-ISAC Trajectory Optimization in LAWN via Composite Barrier Functions"
+  venue: "Journal article"
+  status: "Under revision"
+
+# No submission date of its own — 202600 simply sorts it last within 2026.
+- group: inprogress
+  sortkey: 202600
+  year: 2026
+  title: "TwinLoop-LLM: Intent-Conditioned Cooperative MARL with Token-Budgeted LLM Strategists for 5G RAN Scheduling"
+  venue: "Journal article"
+  status: "In preparation"
 
 - group: thesis
   sortkey: 202308

@@ -11,6 +11,12 @@ Published under the name **Hafiz Muhammad Ali Zeeshan** (cited as H. M. A. Zeesh
 
 {{< publications group="accepted" >}}
 
+## In progress
+
+Manuscripts under review or in preparation.
+
+{{< publications group="inprogress" >}}
+
 ## Thesis
 
 {{< publications group="thesis" >}}
