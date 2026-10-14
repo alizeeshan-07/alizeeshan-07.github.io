@@ -1,0 +1,33 @@
+{{- /*
+  A right-hand column for supporting detail that should sit beside the prose
+  rather than interrupt it.
+
+  Usage:
+
+    {{< sidepanel >}}
+    <span class="about-side-title">Current &amp; past affiliations</span>
+    {{< affiliations >}}
+    {{< /sidepanel >}}
+
+  Nested shortcodes inside .Inner are rendered by Hugo before this template
+  runs, so the panel does not need to know anything about what it contains.
+  Inner content is raw HTML, not markdown — {{< >}} does not run the inner text
+  through goldmark — which is why the labels above are spans and not ##.
+
+  Placement is pure CSS, under .about-side in assets/css/custom.css: the article
+  column stops at max-w-prose while its section runs wider, so from 1280px up
+  the panel is taken out of flow and dropped into that gutter, pinned beside the
+  opening paragraph. Nothing here assumes the About page specifically.
+
+  Put the call LAST in the markdown. Above the breakpoint its position in the
+  source makes no difference, because the panel is positioned absolutely against
+  the article. Below it the panel stays in normal flow and renders exactly where
+  it sits — and supporting detail belongs after the prose, not ahead of the
+  first line a reader sees.
+*/ -}}
+{{- if not (trim .Inner " \n\t") -}}
+  {{- errorf "sidepanel shortcode at %s: no inner content" .Position -}}
+{{- end -}}
+<aside class="about-side not-prose">
+{{ .Inner }}
+</aside>

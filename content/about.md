@@ -11,9 +11,13 @@ Outside of engineering: badminton, hiking, and considerably more video games tha
 
 I write occasionally about AI engineering on [Substack](https://alizeeshan.substack.com) and [Medium](https://medium.com/@dexterous02) — those pieces are collected on the [Articles](/articles/) page.
 
-## Current and past affiliations
-
+<!-- Last in source order on purpose — see layouts/shortcodes/sidepanel.html. -->
+{{< sidepanel >}}
+<span class="about-side-title">Current &amp; past affiliations</span>
 {{< affiliations >}}
+<span class="about-side-title">Professional memberships</span>
+{{< memberships >}}
+{{< /sidepanel >}}
 
 ## Contact
 

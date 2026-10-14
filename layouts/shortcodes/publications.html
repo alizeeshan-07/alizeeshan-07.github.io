@@ -26,7 +26,7 @@
   {{- end -}}
 {{- end -}}
 {{- range sort $pubs "sortkey" "desc" }}
-<div class="mb-6">
+<div class="mb-6 pub-entry">
   <div class="font-semibold text-neutral-800 dark:text-neutral-100">{{ .title | markdownify }}</div>
   {{- with .authors }}
   <div class="text-sm text-neutral-600 dark:text-neutral-300">{{ . | markdownify }}</div>
@@ -34,6 +34,10 @@
   <div class="text-sm italic text-neutral-600 dark:text-neutral-400">
     {{- .venue | markdownify -}}
     {{- with .date }}, {{ . }}{{ end -}}
+    {{- /* Styling lives in custom.css under .pub-status: Blowfish's Tailwind
+           build only emits utilities the theme itself already uses, so the
+           usual inline utility classes would compile to nothing here. */ -}}
+    {{- with .status }} <span class="pub-status not-prose">{{ . }}</span>{{ end -}}
   </div>
   {{- with .takeaway }}
   <div class="text-sm text-neutral-600 dark:text-neutral-300">— {{ . | markdownify }}</div>
