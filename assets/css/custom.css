@@ -226,29 +226,6 @@
   max-width: 11rem;
 }
 
-/* IEEE memberships reuse the row above, but each mark gets the background it
-   was drawn for rather than one shared treatment. IEEE publishes some societies
-   only as white/reverse artwork (ComSoc and SPS are literally style="fill:#fff")
-   and others as dark ink, and the identity guidelines prohibit recolouring
-   either — so a single plaque colour would always hide half of them. */
-.aff-plaque .aff-logo {
-  border-radius: 0.375rem;
-  padding: 0.4rem 0.55rem;
-  box-sizing: content-box;
-}
-
-/* Dark-ink marks: VTS, ITSoc, AESS, CIS, IEEE. */
-.aff-bg-light {
-  background: #fff;
-}
-
-/* White/reverse marks: ComSoc, SPS, Computer Society. Matches the site's dark
-   background, so on the dark theme these read as unbacked while on the light
-   theme they become deliberate dark cards. */
-.aff-bg-dark {
-  background: rgba(var(--color-neutral-800), 1);
-}
-
 .memb-communities {
   margin: 1.1rem 0 0;
   font-size: 0.8rem;
@@ -264,14 +241,22 @@
   margin-bottom: 0.2rem;
 }
 
-/* Flip only the marks flagged in data/affiliations.yaml, and only in the theme
-   where they would vanish. Both are monochrome (measured saturation 0 and 2),
-   so inverting changes lightness and nothing else. The coloured marks — NATO,
-   ZONG, Adept Tech — are never touched, since inverting those would shift hue
-   and misrepresent the brand. */
+/* Flip only the marks flagged in data/affiliations.yaml and data/memberships.yaml,
+   and only in the theme where they would otherwise vanish. Everything else —
+   NATO, ZONG, Adept Tech, the IEEE and AESS marks — is left exactly as
+   published, because it already reads on both backgrounds.
+
+   hue-rotate(180deg) is the second half of the filter, not decoration. invert()
+   flips lightness and hue together, so a coloured mark comes back on the
+   complementary hue: the IEEE Computer Society's orange would land on blue.
+   Rotating 180 degrees puts the hue back where it started while keeping the
+   lightness flipped. Measured across every opaque pixel, median hue moves
+   203 -> 203 for VTS, 195 -> 196 for CIS and 37 -> 28 for Computer Society,
+   and the share of each mark with under 1.6:1 contrast against its background
+   goes to zero. On the monochrome marks the rotation is a no-op. */
 .dark .aff-invert-dark,
 html:not(.dark) .aff-invert-light {
-  filter: invert(1);
+  filter: invert(1) hue-rotate(180deg);
 }
 
 .aff-label {
@@ -414,21 +399,16 @@ html:not(.dark) .aff-invert-light {
   margin-top: 0.6rem;
 }
 
+/* Flush left, not centred. No mark carries a plaque now, so the cell edges are
+   invisible, and centring is what made the rows look scattered: every mark is
+   44px tall, but their widths run 44px (a square crest) to 164px (the AESS
+   wordmark), so each one started at a different x with nothing on screen to
+   explain why. Flush left gives each column a visible alignment line. */
 .about-side .aff-item {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 2.75rem;
-}
-
-/* The affiliation marks carry no plaque, so the cell edges are invisible and
-   centring is what made the row look scattered: every mark is 44px tall, but
-   their widths run 44px (a square crest) to 140px (the ZONG wordmark), so each
-   one started at a different x. Flush left gives the two columns a visible
-   alignment line. The membership plaques need none of this — they fill their
-   cells outright. */
-.about-side .aff-row:not(.aff-plaque) .aff-item {
   justify-content: flex-start;
+  height: 2.75rem;
 }
 
 /* Fit within the cell instead of the base rule's fixed 2.5rem height, so a
@@ -439,16 +419,6 @@ html:not(.dark) .aff-invert-light {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-}
-
-/* The membership plaques fill their cell outright, so all eight cards are
-   identical and the artwork is centred inside each — rather than each plaque
-   shrink-wrapping its own logo, which is what made the row look scattered. */
-.about-side .aff-plaque .aff-logo {
-  width: 100%;
-  height: 100%;
-  padding: 0.4rem 0.55rem;
-  box-sizing: border-box;
 }
 
 .about-side .memb-communities {

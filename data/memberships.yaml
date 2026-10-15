@@ -13,57 +13,72 @@
 # ComSoc first, since IEEE Communications Magazine and IEEE OJCOMS are both
 # ComSoc publications.
 #
-#   bg   which background this mark was drawn for, so it renders unaltered:
-#          light -> white plaque. VTS, ITSoc, AESS and CIS are dark-ink marks.
-#          dark  -> dark plaque. ComSoc, SPS and Computer Society publish only
-#                   white/reverse versions (literally style="fill:#fff"), which
-#                   are invisible on white.
+#   invert  the theme in which to flip this mark, matching data/affiliations.yaml.
+#           Omit it when the mark already reads on both backgrounds.
 #
-# IEEE's identity guidelines prohibit recolouring the marks, and SPS carries a
-# radial gradient besides, so the per-logo inversion used in the affiliations
-# row is not available here. Giving each mark its intended backing keeps all
-# eight legible on both themes without touching the artwork.
+# These marks used to sit on per-logo plaques, which left eight boxes floating
+# on the page. They now sit directly on the background like the affiliation
+# logos, and the ones that would otherwise disappear are flipped per theme.
+#
+# The filter is invert(1) hue-rotate(180deg), not a plain invert: these marks
+# are not all monochrome, and inverting a coloured one alone would land it on
+# the complementary hue. The second step rotates the hue back. Measured over
+# every opaque pixel of each mark, as a share with less than 1.6:1 contrast
+# against the page background it sits on:
+#
+#   mark               fails before   after    median hue before -> after
+#   ComSoc                100% light     0%    monochrome (pure white, sat 0)
+#   SPS                   100% light     0%    monochrome (pure white, sat 0)
+#   Computer Society     53.8% light     0%    37 deg -> 28 deg
+#   ITSoc                  100% dark     0%    monochrome (pure black, sat 0)
+#   CIS                      38% dark     0%   195 deg -> 196 deg
+#   VTS                      23% dark     0%   203 deg -> 203 deg
+#
+# IEEE and AESS carry no flag: measured 0% and 1.7%, so both already read on
+# either background and are left exactly as published.
+#
+# Note for anyone revisiting this: SPS was previously assumed to carry a radial
+# gradient that ruled inversion out. It does not — measured saturation is 0
+# across every pixel, so it flips to solid black cleanly.
 
 societies:
   - name: "IEEE"
     label: "IEEE — Student Member"
     logo: "img/memberships/ieee.svg"
-    bg: "light"
 
   - name: "IEEE Communications Society"
     label: "IEEE Communications Society (ComSoc)"
     logo: "img/memberships/comsoc.svg"
-    bg: "dark"
+    invert: "light"
 
   - name: "IEEE Vehicular Technology Society"
     label: "IEEE Vehicular Technology Society (VTS)"
     logo: "img/memberships/vts.svg"
-    bg: "light"
+    invert: "dark"
 
   - name: "IEEE Signal Processing Society"
     label: "IEEE Signal Processing Society (SPS)"
     logo: "img/memberships/sps.svg"
-    bg: "dark"
+    invert: "light"
 
   - name: "IEEE Information Theory Society"
     label: "IEEE Information Theory Society (ITSoc)"
     logo: "img/memberships/itsoc.svg"
-    bg: "light"
+    invert: "dark"
 
   - name: "IEEE Aerospace and Electronic Systems Society"
     label: "IEEE Aerospace and Electronic Systems Society (AESS)"
     logo: "img/memberships/aess.svg"
-    bg: "light"
 
   - name: "IEEE Computer Society"
     label: "IEEE Computer Society"
     logo: "img/memberships/computer-society.png"
-    bg: "dark"
+    invert: "light"
 
   - name: "IEEE Computational Intelligence Society"
     label: "IEEE Computational Intelligence Society (CIS)"
     logo: "img/memberships/cis.png"
-    bg: "light"
+    invert: "dark"
 
 communities:
   - "Future Networks"

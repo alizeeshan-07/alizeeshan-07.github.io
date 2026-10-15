@@ -3,12 +3,10 @@
 
   Usage:  {{< memberships >}}
 
-  Reuses the .aff-* layout from the affiliations row rather than duplicating it,
-  with one modifier: .aff-plaque puts the logos on white. Unlike the affiliation
-  marks — mostly monochrome, so they can be inverted per theme — IEEE marks are
-  multi-colour (SPS uses gradients) and IEEE's identity guidelines prohibit
-  recolouring them, so a plaque is the only treatment that keeps every mark
-  legible on both themes without altering it.
+  Reuses the .aff-* layout and the per-theme inversion from the affiliations
+  row, so the marks sit directly on the page background rather than on eight
+  plaques. Which marks flip, and the measurements behind each decision, are
+  recorded in data/memberships.yaml.
 
   Societies get logos; Technical Communities are free to join and render as
   text, so the row does not imply they carry equal weight.
@@ -19,7 +17,7 @@
 {{- end -}}
 
 {{- with $data.societies }}
-<ul class="aff-row aff-plaque not-prose">
+<ul class="aff-row not-prose">
   {{- range . }}
   {{- $res := resources.Get .logo -}}
   {{- if not $res -}}
@@ -33,12 +31,17 @@
   {{- else -}}
     {{- $src = $res.RelPermalink -}}
   {{- end -}}
-  {{- $bg := .bg | default "light" -}}
-  {{- if not (in (slice "light" "dark") $bg) -}}
-    {{- errorf "memberships: bg must be \"light\" or \"dark\", got %q" $bg -}}
+  {{- /* Same contract as the affiliations row: the value names the theme in
+         which to flip the mark. No flag means it reads on both. */ -}}
+  {{- $inv := "" -}}
+  {{- with .invert -}}
+    {{- if not (in (slice "light" "dark") .) -}}
+      {{- errorf "memberships: invert must be \"light\" or \"dark\", got %q" . -}}
+    {{- end -}}
+    {{- $inv = printf " aff-invert-%s" . -}}
   {{- end -}}
   <li class="aff-item" tabindex="0">
-    <img class="aff-logo nozoom aff-bg-{{ $bg }}" src="{{ $src }}" alt="{{ .name }}" loading="lazy">
+    <img class="aff-logo nozoom{{ $inv }}" src="{{ $src }}" alt="{{ .name }}" loading="lazy">
     <span class="aff-label">{{ .label | default .name }}</span>
   </li>
   {{- end }}
