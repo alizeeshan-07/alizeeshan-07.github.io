@@ -89,14 +89,27 @@
       url: "https://doi.org/10.1109/GLOBECOM54140.2023.10437095"
 
 # Manuscripts under review or in preparation. Submission and review dates are
-# deliberately not displayed — they date-stamp how long a paper has been sitting
-# with reviewers, which tells a reader nothing useful about the work. The dates
-# survive only as sortkeys, so the list stays in a sensible order: furthest
-# along first, with the unsubmitted manuscript last.
+# deliberately not displayed: they date-stamp how long a paper has been sitting
+# with reviewers, which tells a reader nothing useful about the work.
+#
+# In this group sortkey is an ordering key only, never a date on the page. It
+# keeps the YYYYMM shape the other groups use, and the first five were seeded
+# from real submission dates, but entries added since just take the next value
+# up so the newest sits first and the unsubmitted manuscript stays last. Two
+# entries must never share a key: ties are what put the published list in a
+# random order before sortkey existed.
 #
 # Author lists are filled in where the manuscript's title page is to hand and
 # omitted rather than guessed everywhere else, so a missing author line means
 # nobody has checked it yet, not that the paper is single-authored.
+
+- group: inprogress
+  sortkey: 202611
+  year: 2026
+  title: "Bridging the Feasibility Gap: Point and Interval Verification of Machine Learning Load Forecasts against N-1 Security Constraints"
+  authors: "S. Ashraf, **H. M. A. Zeeshan**, B. Ahmedov, O. Hasan"
+  venue: "Journal article"
+  status: "Submitted"
 
 - group: inprogress
   sortkey: 202610
