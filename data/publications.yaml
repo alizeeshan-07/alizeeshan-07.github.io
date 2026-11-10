@@ -104,6 +104,34 @@
 # nobody has checked it yet, not that the paper is single-authored.
 
 - group: inprogress
+  sortkey: 202619
+  year: 2026
+  title: "AMEND: Agent-Mediated Errata for Noisy Datasets of Function-Calling Benchmarks"
+  venue: "Conference paper"
+  status: "Submitted"
+
+- group: inprogress
+  sortkey: 202618
+  year: 2026
+  title: "Observable Participation: A Passive Aerial Threat to Secure Aggregation in HAPS Federated Learning"
+  venue: "Conference paper"
+  status: "Submitted"
+
+- group: inprogress
+  sortkey: 202617
+  year: 2026
+  title: "Probe, Pool, Certify: Clustering Decisions for Federated Adaptation of Learned Transceivers"
+  venue: "Conference paper"
+  status: "Submitted"
+
+- group: inprogress
+  sortkey: 202616
+  year: 2026
+  title: "Train With Records, Certify With Bits: Byte-Budgeted Conformal Calibration for Predictive-QoS Analytics"
+  venue: "Conference paper"
+  status: "Submitted"
+
+- group: inprogress
   sortkey: 202611
   year: 2026
   title: "Bridging the Feasibility Gap: Point and Interval Verification of Machine Learning Load Forecasts against N-1 Security Constraints"
