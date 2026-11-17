@@ -93,6 +93,9 @@ Recommended by ISSB for commission in the Pakistan Air Force as a General Duty P
 
 ## Talks
 
+**Physical AI over 6G IoT Networks: World Models, Agents and Safe Intelligence at the Wireless Edge**
+Three Minute Thesis entry, DFT2W 2026, SEECS NUST, November 2026.
+
 **Transformers to IoT Edge Intelligence: The Evolution of Efficient LLMs**
 PhD Qualifier B presentation, SEECS NUST, May 2025.
 

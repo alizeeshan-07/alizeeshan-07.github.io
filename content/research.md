@@ -9,6 +9,8 @@ By 2035, a large share of network traffic is forecast to come from machines rath
 
 **The central question:** how should prediction, computation, and coordination be shared between a machine and the network, so that physical AI stays capable and safe over an imperfect wireless link?
 
+A [three-minute version](/publications/#talks) of the argument is on the Publications page.
+
 The programme stands on four pillars. The first two are the core, the third is a further line of work, and the fourth is a requirement inside each of the others. It is at an early stage: the questions are set and the first problems are being tested, so the manuscripts named below are related groundwork, not finished answers.
 
 ## 1. World models for the wireless physical world
@@ -75,9 +77,16 @@ A rule I work by: **never propose a language model where a millisecond control p
 
 ## Currently learning
 
+- **World models** — latent dynamics models in the Dreamer and JEPA families, action-conditioned prediction, and model-based RL: the methods behind a machine that predicts its scene and its radio link together.
 - **Large reasoning models** — RLVR/GRPO pipelines, process reward models, test-time scaling and budget forcing.
 - **LLM pretraining from scratch** — small-scale, aimed at domain foundation models (RF/telemetry), not frontier chasing.
 - **Edge AI deployment** — on-device training and adaptation, NPU profiling, energy-aware inference.
+
+The data foundation that enterprise AI depends on:
+
+- **Data privacy & compliance** — synthetic data generation, test data management, data masking, and data tokenization.
+- **AI context delivery** — AI-ready data products, AI runtime governance, context delivery through RAG and MCP, and AI evaluation and observability.
+- **Data integration** — customer data integration, data pipelining, cloud data integration (iPaaS), and data migration.
 
 Every track ends in an artifact — a from-scratch reproduction, a benchmarked system, or a paper. Never a course certificate.
 
