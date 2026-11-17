@@ -35,11 +35,6 @@
   weight = 60
 
 [[main]]
-  name = "Tech"
-  pageRef = "tech"
-  weight = 70
-
-[[main]]
   name = "CV"
   pageRef = "cv"
   weight = 80

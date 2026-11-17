@@ -7,11 +7,6 @@ Twenty-nine delivered client engagements across healthcare, legal, real estate, 
 
 Figures throughout are **client-reported outcomes**, not independently measured benchmarks. Clients are not named; where an industry is known it is given as a sector instead.
 
-| | |
-|---|---|
-| **130 engagements** since 2014 | 100% job success · 4.97 / 5 across 103 reviews |
-| **Independently verified** | [Top Rated Plus standing on Upwork](https://www.upwork.com/freelancers/alizeeshan) |
-
 ## Flagship case studies
 
 {{< projects featured="true" >}}
