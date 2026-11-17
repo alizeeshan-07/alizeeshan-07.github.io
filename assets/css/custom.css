@@ -209,44 +209,12 @@
 
 /* Homepage ---------------------------------------------------------------- */
 
-/* The profile layout centres its content; the lead paragraph stays centred
-   under the name, everything after it reads as normal left-aligned copy. */
+/* The one line of positioning under the name and links. */
 .home-lead {
   font-size: 1.2rem;
   line-height: 1.55;
   max-width: 34rem;
-  margin: 0.5rem auto 0;
-}
-
-.home-body {
-  text-align: left;
-}
-
-.stat-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
-  gap: 1.25rem 1rem;
-  margin: 2rem 0 0.5rem;
-}
-
-.stat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.stat-value {
-  font-size: 2rem;
-  font-weight: 800;
-  line-height: 1.1;
-  font-variant-numeric: tabular-nums;
-}
-
-.stat-label {
-  margin-top: 0.3rem;
-  font-size: 0.8rem;
-  line-height: 1.35;
+  margin: 0.5rem auto 1.5rem;
 }
 
 /* Affiliation logo row ----------------------------------------------------- */
