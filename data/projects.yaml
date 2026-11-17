@@ -16,7 +16,13 @@
 #   goal      the problem being solved
 #   approach  what was actually built
 #   impact    reported results — omitted entirely where the entry states none
-#   url       the Upwork portfolio entry, omitted where no longer published
+#   url       the Upwork portfolio entry, omitted where no longer published.
+#             Kept as the record of where each entry came from, but NOT rendered:
+#             the site links the verified track record once, on the Projects
+#             page, instead of sending every title to a freelance marketplace.
+#   featured  1..6 — a flagship case study, shown first on Projects (all six)
+#             and on the homepage (the first three), in this order. Chosen for
+#             a stated business result an executive can read without the stack.
 
 # ---------------------------------------------------------------- agentic
 - group: agentic
@@ -29,6 +35,7 @@
 
 - group: agentic
   title: "AI Agent Qualifying 150+ Leads a Day Inside HubSpot"
+  featured: 3
   sector: "B2B sales"
   goal: "A sales team was spending 60% of its time on unqualified leads, and needed the qualification, research, and outreach drafting to happen autonomously inside HubSpot."
   approach: "A custom agent using OpenAI function calling with eight connected tools, memory persistence, and escalation rules."
@@ -47,6 +54,7 @@
 
 - group: agentic
   title: "Conversational Discovery Platform Cutting Search Time 93%"
+  featured: 2
   sector: "wellness"
   goal: "Replace a 30-minute retreat search with a conversational experience that reads emotional state rather than matching keywords."
   approach: "An agentic platform on LangGraph, FastAPI, and RAG that profiles emotional state, applies constraints, and matches users to vetted options through guided conversation."
@@ -79,6 +87,7 @@
 # ---------------------------------------------------------------- rag
 - group: rag
   title: "Enterprise RAG Knowledge Assistant with Citations"
+  featured: 6
   goal: "A 200-person company needed instant, cited answers from SOPs, Confluence, and Slack history — employees were waiting hours on manager replies."
   approach: "A retrieval pipeline on Pinecone, LangChain, and OpenAI embeddings, with source-citation logic, chunk optimisation, and role-based access for secure deployment."
   impact: "Manager escalations down 70%. Retrieval time went from hours to seconds, with citations attached."
@@ -130,6 +139,7 @@
 # ---------------------------------------------------------------- healthcare
 - group: healthcare
   title: "Agentic Patient Triage Replacing Call-Centre Routing"
+  featured: 1
   sector: "healthcare"
   goal: "Replace manual call-centre triage with real-time intelligent routing, so patients reach the right specialist faster."
   approach: "A voice-based AI coordinator that infers patient intent, checks live EMR availability, enforces clinical protocols, and books appointments through a HIPAA-compliant integration."
@@ -192,6 +202,7 @@
 # ---------------------------------------------------------------- automation
 - group: automation
   title: "Multi-Agent Procurement Workflow"
+  featured: 4
   sector: "procurement"
   goal: "Each procurement batch took over six hours of manual work reviewing vendor quotes, matching purchase orders, and generating approval documents."
   approach: "A multi-agent LLM orchestration on n8n, OpenAI, and custom Python pipelines, with one agent each for quote extraction, PO matching, anomaly detection, and report generation, coordinated by automated triggers."
@@ -219,6 +230,7 @@
 # ---------------------------------------------------------------- ml
 - group: ml
   title: "Document Classification for a Legal Firm"
+  featured: 5
   sector: "legal"
   goal: "A firm processing 500+ documents daily had manual classification running at only 71% accuracy, causing filing errors and compliance exposure."
   approach: "A custom NLP classification pipeline using fine-tuned transformers, OCR preprocessing, and multi-label categorisation, integrated into the existing document management system over REST."

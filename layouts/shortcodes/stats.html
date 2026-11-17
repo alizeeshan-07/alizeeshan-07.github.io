@@ -1,0 +1,22 @@
+{{- /*
+  A row of headline figures for the homepage.
+
+  Usage:  {{< stats >}}
+          130 | client engagements delivered
+          14  | production AI systems since 2022
+          {{< /stats >}}
+
+  One figure per line, as "value | label". Every figure must already be stated
+  elsewhere on the site (Work, Projects, CV) — this row repeats, never adds.
+*/ -}}
+<div class="not-prose stat-row">
+  {{- range split (trim .Inner "\n ") "\n" }}
+  {{- $parts := split . "|" }}
+  {{- if eq (len $parts) 2 }}
+  <div class="stat">
+    <span class="stat-value text-neutral-800 dark:text-neutral-100">{{ trim (index $parts 0) " " }}</span>
+    <span class="stat-label text-neutral-500 dark:text-neutral-400">{{ trim (index $parts 1) " " }}</span>
+  </div>
+  {{- end }}
+  {{- end }}
+</div>

@@ -3,16 +3,18 @@ title: "Projects"
 showTableOfContents: true
 ---
 
-Delivered client work, grouped by what the system actually does. Twenty-nine engagements across healthcare, legal, real estate, B2B sales, education, and manufacturing.
+Twenty-nine delivered client engagements across healthcare, legal, real estate, B2B sales, education, and manufacturing — six flagship case studies first, then the full list grouped by what each system does.
 
-Figures throughout are **client-reported outcomes**, not independently measured benchmarks. Clients are not named — Upwork does not publish client identities, so where an industry is known it is given as a sector instead.
-
-Track record on [Upwork](https://www.upwork.com/freelancers/alizeeshan), independently verified by the platform:
+Figures throughout are **client-reported outcomes**, not independently measured benchmarks. Clients are not named; where an industry is known it is given as a sector instead.
 
 | | |
 |---|---|
-| **Top Rated Plus** · 100% Job Success | since December 2014 |
-| **130 contracts** · 1,675 hours | 4.97 / 5 across 103 reviews |
+| **130 engagements** since 2014 | 100% job success · 4.97 / 5 across 103 reviews |
+| **Independently verified** | [Top Rated Plus standing on Upwork](https://www.upwork.com/freelancers/alizeeshan) |
+
+## Flagship case studies
+
+{{< projects featured="true" >}}
 
 ## Agentic & multi-agent systems
 

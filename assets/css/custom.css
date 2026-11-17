@@ -142,8 +142,8 @@
   text-align: left;
 }
 
-/* The client's industry, where the source states one. Upwork never names the
-   client company, so the sector is all there is to say. */
+/* The client's industry, where the source states one. Clients are not named,
+   so the sector is all there is to say. */
 .proj-sector {
   font-size: 0.7rem;
   text-transform: uppercase;
@@ -188,6 +188,65 @@
 
 .dark .proj-tag {
   background: rgba(var(--color-neutral-700), 1);
+}
+
+/* Flagship case studies: result first, no stack tags. A left rule sets them
+   apart from the full list below without a card background, which the noir
+   scheme would render as a grey slab. */
+.proj-flagship {
+  padding-left: 1rem;
+  border-left: 2px solid #2f6f5e;
+  text-align: left;
+}
+
+.proj-result {
+  margin: 0.45rem 0 0.35rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.45;
+  text-align: left;
+}
+
+/* Homepage ---------------------------------------------------------------- */
+
+/* The profile layout centres its content; the lead paragraph stays centred
+   under the name, everything after it reads as normal left-aligned copy. */
+.home-lead {
+  font-size: 1.2rem;
+  line-height: 1.55;
+  max-width: 34rem;
+  margin: 0.5rem auto 0;
+}
+
+.home-body {
+  text-align: left;
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+  gap: 1.25rem 1rem;
+  margin: 2rem 0 0.5rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-label {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  line-height: 1.35;
 }
 
 /* Affiliation logo row ----------------------------------------------------- */
