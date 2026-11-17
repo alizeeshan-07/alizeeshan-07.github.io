@@ -3,9 +3,17 @@ title: "About"
 showTableOfContents: false
 ---
 
-Hi, I am **Ali Zeeshan** — a PhD candidate at **SEECS, NUST**, working in the Information, Processing and Transmission Lab under **Dr. Syed Ali Hassan**, and **Head of AI at Adept Tech Solutions**. My research is on efficient and agentic large language models at the network edge: how a model should decide whether to answer on your phone, at a base station, or in the cloud, under real budgets for latency, bandwidth, and cost. I also work on securing next-generation wireless systems for the [NATO SPS programme](/work/#research-projects). There is more detail on the [Research](/research/) page.
+Hi, I am **Ali Zeeshan** — **Head of AI at Adept Tech Solutions** and a PhD candidate at **SEECS, NUST**. I lead AI from the decision a leadership team has to make — where it pays, what to build, what to buy — through to the system running in production.
 
-Alongside the research, I build. Since 2014 I have delivered **130 client contracts** — AI agents, retrieval systems, voice assistants, and a fair number of SaaS platforms — across healthcare, legal services, real estate, and B2B sales. Twenty-nine of them are written up on [Projects](/projects/). Seven of those years overlapped with operating national telecom core networks at **ZONG CMPak**, which is where I learned what "production" actually costs when the thing you broke is carrying a country's phone calls.
+Since 2014 I have delivered **130 client engagements** — AI agents, retrieval systems, voice assistants, and a fair number of SaaS platforms — across healthcare, legal services, real estate, and B2B sales. Twenty-nine of them are written up on [Projects](/projects/), led by six flagship case studies. Seven of those years overlapped with operating a national telecom core network at **ZONG CMPak**, which is where I learned what "production" actually costs when the thing you broke is carrying a country's phone calls.
+
+The research keeps the engineering honest. In the Information, Processing and Transmission Lab under **Dr. Syed Ali Hassan**, I study how an AI model should decide whether to answer on your phone, at a base station, or in the cloud, under real budgets for latency, bandwidth, and cost. I also work on securing next-generation wireless systems for the [NATO SPS programme](/work/#research-projects). There is more detail on the [Research](/research/) page.
+
+## Working with me
+
+Leadership teams bring me in for [AI strategy and architecture, technical due diligence, and build-versus-buy decisions](/work/#independent-ai-advisory). If you are weighing one of those, I am best reached on [LinkedIn](https://www.linkedin.com/in/alizeeshan07/).
+
+## Beyond work
 
 Outside of engineering: badminton, hiking, and considerably more video games than I intend to justify. I live in Lahore and speak Urdu, Punjabi, and English.
 

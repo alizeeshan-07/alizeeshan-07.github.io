@@ -1,12 +1,21 @@
 {{- /*
   Renders applied AI projects from data/projects.yaml.
 
-  Usage:  {{< projects >}}                 all of them
-          {{< projects group="agentic" >}} one themed group
+  Usage:  {{< projects >}}                       all of them
+          {{< projects group="agentic" >}}       one themed group
+          {{< projects featured="true" >}}       the flagship case studies
+          {{< projects featured="true" limit="3" >}}   the first three of them
 
-  Each project renders as Goal / Approach / Impact. Impact is omitted entirely
-  when the source entry reports none — an empty "Impact:" label reads as a
-  missing result rather than an absent claim.
+  Standard entries render as Goal / Approach / Impact. Impact is omitted
+  entirely when the source entry reports none — an empty "Impact:" label reads
+  as a missing result rather than an absent claim.
+
+  Flagship entries (featured=N in the data, ordered by N) are written for a
+  reader who decides rather than builds: the result comes first, then the
+  problem and what was built, and the stack tags are left out.
+
+  Titles are not linked. Each entry's `url` is its Upwork portfolio page; the
+  Projects page links the verified track record once instead.
 
   Class note: layout lives in assets/css/custom.css under .proj-*, because
   Blowfish's Tailwind build only emits utilities the theme itself uses, so
@@ -17,6 +26,7 @@
   {{- errorf "projects shortcode: data/projects.yaml is missing or empty" -}}
 {{- end -}}
 {{- $group := .Get "group" -}}
+{{- $featured := eq (.Get "featured") "true" -}}
 {{- $projects := $all -}}
 {{- with $group -}}
   {{- $projects = where $all "group" . -}}
@@ -24,17 +34,43 @@
     {{- errorf "projects shortcode: no entries with group=%q at %s" . $.Position -}}
   {{- end -}}
 {{- end -}}
-<div class="not-prose">
+{{- if $featured -}}
+  {{- $projects = sort (where $projects "featured" "gt" 0) "featured" -}}
+  {{- if not $projects -}}
+    {{- errorf "projects shortcode: no featured entries at %s" $.Position -}}
+  {{- end -}}
+  {{- with .Get "limit" -}}
+    {{- $projects = first (int .) $projects -}}
+  {{- end -}}
+{{- end -}}
+<div class="not-prose{{ if $featured }} proj-flagships{{ end }}">
   {{- range $projects }}
+  {{- if $featured }}
+  <div class="proj proj-flagship">
+    {{- with .sector }}
+    <span class="proj-sector text-neutral-500 dark:text-neutral-400">{{ . }}</span>
+    {{- end }}
+    <div class="proj-head">
+      <span class="font-semibold text-neutral-800 dark:text-neutral-100">{{ .title }}</span>
+    </div>
+    {{- with .impact }}
+    <p class="proj-result text-neutral-800 dark:text-neutral-100">{{ . }}</p>
+    {{- end }}
+    {{- with .goal }}
+    <p class="proj-line text-neutral-600 dark:text-neutral-300">
+      <span class="proj-label text-neutral-500 dark:text-neutral-400">Problem</span>{{ . }}
+    </p>
+    {{- end }}
+    {{- with .approach }}
+    <p class="proj-line text-neutral-600 dark:text-neutral-300">
+      <span class="proj-label text-neutral-500 dark:text-neutral-400">Built</span>{{ . }}
+    </p>
+    {{- end }}
+  </div>
+  {{- else }}
   <div class="proj">
     <div class="proj-head">
-      <span class="font-semibold text-neutral-800 dark:text-neutral-100">
-        {{- if .url -}}
-          <a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>
-        {{- else -}}
-          {{ .title }}
-        {{- end -}}
-      </span>
+      <span class="font-semibold text-neutral-800 dark:text-neutral-100">{{ .title }}</span>
       {{- with .sector }}
       <span class="proj-sector text-neutral-500 dark:text-neutral-400">{{ . }}</span>
       {{- end }}
@@ -62,5 +98,6 @@
     </div>
     {{- end }}
   </div>
+  {{- end }}
   {{- end }}
 </div>

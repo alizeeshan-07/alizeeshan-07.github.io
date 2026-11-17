@@ -31,13 +31,13 @@ AI strategy across sales, marketing, and operations agents. LLM-powered multi-ag
 Advised by Dr. Syed Ali Hassan. Efficient and agentic large language models at the network edge; inference-time compute allocation under latency, bandwidth, and cost budgets; deep RL for CR-NOMA backscatter communication.
 
 **Founder & CEO** — NeuralStacks · Jul 2018 – present
-Top Rated Plus agency delivering AI services across generative AI, MLOps, and automation.
+AI services firm delivering generative AI, MLOps, and automation engagements for international clients.
 
 **AI Engineer** — Imperium Solutions, USA · Nov 2021 – present *(part-time, remote)*
 AI-powered applications: chatbots, automation workflows, SaaS platforms. Generative AI, NLP, RAG, multi-agent orchestration, MCP integration, model fine-tuning, inference optimization, MLOps.
 
-**Independent AI Consultant** — Upwork · Dec 2014 – present · *Top Rated Plus*
-130 contracts, 1,675 hours, 100% Job Success, 4.97/5 across 103 reviews. AI strategy and architecture, technical due diligence on existing deployments, domain-specific fine-tuning, multi-agent orchestration, RAG, inference optimization, and process automation across healthcare, SaaS, fintech, legal, e-commerce, and real estate. Selected engagements are on the [Projects](/projects/) page.
+**Independent AI Advisor** — self-employed · Dec 2014 – present
+130 engagements at a 100% job success and 4.97/5 across 103 reviews, independently verified by Upwork (Top Rated Plus). AI strategy and architecture, technical due diligence on existing deployments, domain-specific fine-tuning, multi-agent orchestration, RAG, inference optimization, and process automation across healthcare, SaaS, fintech, legal, e-commerce, and real estate. Selected engagements are on the [Projects](/projects/) page.
 
 **AI Prompt Engineer** — Smart Digital Assets S.r.l, Pisa (remote) · May 2022 – Jun 2024
 Prompt development and optimization for generative models in content creation.
@@ -86,7 +86,7 @@ Machine learning for wireless communication systems: AI, LLMs, edge computing, a
 For *RAG Powered LLMs for QA: Evolution, Challenges, Applications, and Future Directions*.
 
 **Top Rated Plus, 100% Job Success** — Upwork
-Platform-verified standing across 130 contracts and 1,675 hours since 2014, at 4.97/5 over 103 reviews. Passed $100,000 in earnings within the first eighteen months (Feb 2020).
+Platform-verified standing across 130 engagements since 2014, at 4.97/5 over 103 reviews.
 
 **Recommended for commission** — Inter Services Selection Board, Pakistan · Jun 2010
 Recommended by ISSB for commission in the Pakistan Air Force as a General Duty Pilot.
