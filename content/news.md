@@ -3,6 +3,11 @@ title: "News"
 showTableOfContents: false
 ---
 
+## 2026
+
+- **Nov 2026** — Refocused the PhD programme on **physical AI over 6G IoT networks**: world models, energy-aware edge compute, agent networking, and safe intelligence. See [Research](/research/).
+- **Aug 2026** — Camera-ready submitted for "FedLoRA-AE: Federated End-to-End Physical-Layer Autoencoders with Low-Rank Per-Cell Adapters for 3GPP CDL Profiles", accepted at **IEEE GLOBECOM 2026** (Macau, December).
+
 ## 2025
 
 - **Sep 2025** — Joined the **NATO SPS project SHAILLA** (Canada · Türkiye · Pakistan) on shielding HAPS networks against intelligent link-level attacks.

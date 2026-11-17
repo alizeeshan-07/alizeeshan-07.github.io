@@ -63,7 +63,7 @@ Best reached on [LinkedIn](https://www.linkedin.com/in/alizeeshan07/).
 
 *Islamabad, Pakistan · Jan 2024 – Present*
 
-Advised by Dr. Syed Ali Hassan. I study how AI systems should decide where to run — on a device, at the network edge, or in the cloud — under real budgets for latency, bandwidth, and cost. More on the [Research](/research/) page.
+Advised by Dr. Syed Ali Hassan. I study physical AI over 6G IoT networks — how machines and the network should share prediction, computation, and coordination so that robots, drones, and connected devices stay capable and safe over an imperfect wireless link. More on the [Research](/research/) page.
 
 ### Research projects
 
