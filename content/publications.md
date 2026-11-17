@@ -27,10 +27,22 @@ Manuscripts under review or in preparation.
 
 ## Talks
 
-**Physical AI over 6G IoT Networks: World Models, Agents and Safe Intelligence at the Wireless Edge**
-Three Minute Thesis entry, DFT2W 2026, SEECS NUST, November 2026.
+**The thesis in three minutes — Physical AI over 6G IoT Networks**
+Three-minute thesis talk, November 2026.
 
-The thesis in three minutes. By 2035, nearly half of all network traffic is [forecast to come from AI](https://www.nokia.com/newsroom/nokia-global-network-traffic-report-forecasts-ai-will-drive-nearly-half-of-global-traffic-in-2035/): software agents talking to each other, and robots, drones, and cars streaming what they see. Our networks were built for people who watch and scroll; if a video freezes, you wait, but a delivery drone that loses its connection over a crowded street cannot. The talk asks one question — how do we build 6G and the Internet of Things for machines that act? — and gives three parts of the answer: world models that let a machine predict both its surroundings and its radio link, deciding what a small device computes for itself and what it sends to the network, and carrying the traffic of thousands of AI agents. Under all three sits safety: what the machine does when the link fails. 6G is being standardised now, and the choices of the next few years decide whether the machines of 2035 get a network built for them or inherit one built for us. The full programme is on the [Research](/research/) page.
+> **Tomorrow's networks will serve machines, not just people.** By 2035, nearly half of all network traffic is [forecast to come from AI](https://www.nokia.com/newsroom/nokia-global-network-traffic-report-forecasts-ai-will-drive-nearly-half-of-global-traffic-in-2035/). Today's networks were built for people who watch and scroll. If a video freezes, you wait; a delivery drone that loses its link over a crowded street cannot.
+
+**The question:** how do we build 6G and the Internet of Things for **machines that act**?
+
+- **World models** — a machine that predicts both the world around it and the radio signal it depends on can plan before its connection drops.
+- **Where the thinking happens** — what a small device decides for itself, and what it sends to the network.
+- **Agents** — carrying and coordinating the traffic of thousands of AI agents at once.
+
+**Under all three sits safety:** what the machine does when the link fails.
+
+**Why now:** 6G is being standardised today. The choices of the next few years decide whether the machines of 2035 get a network built for them, or inherit one built for us.
+
+The full programme is on the [Research](/research/) page.
 
 **Transformers to IoT Edge Intelligence: The Evolution of Efficient LLMs**
 PhD Qualifier B presentation, SEECS NUST, May 2025.
