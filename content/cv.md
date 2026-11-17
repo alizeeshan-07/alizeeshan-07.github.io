@@ -28,7 +28,7 @@ Lead the AI function end to end: strategy and technical direction; production mu
 AI strategy across sales, marketing, and operations agents. LLM-powered multi-agent architectures, RAG pipelines over customer data and CRMs, model selection and evaluation, cloud-native AWS infrastructure, and oversight of frontend, backend, and cloud engineering teams.
 
 **PhD Candidate** — IPT Lab, SEECS NUST · Jan 2024 – present
-Advised by Dr. Syed Ali Hassan. Efficient and agentic large language models at the network edge; inference-time compute allocation under latency, bandwidth, and cost budgets; deep RL for CR-NOMA backscatter communication.
+Advised by Dr. Syed Ali Hassan. Physical AI over 6G IoT networks: world models for the wireless physical world, energy-aware edge compute, agent networking, and safe intelligence under link loss. Earlier work on deep RL for CR-NOMA backscatter communication.
 
 **Founder & CEO** — NeuralStacks · Jul 2018 – present
 AI services firm delivering generative AI, MLOps, and automation engagements for international clients.
@@ -98,7 +98,7 @@ PhD Qualifier B presentation, SEECS NUST, May 2025.
 
 ## Research areas
 
-Edge AI and on-device inference · efficient and agentic LLMs · small language models, quantization, and distillation · inference-time compute allocation · AI-native wireless networks (5G-Advanced, 6G) · trustworthy and verifiable AI (runtime guardrails, constrained policy optimization, conformal prediction) · multi-agent RL · world models and digital twins · federated and distributed learning · integrated sensing and communication
+Physical and embodied AI over wireless · world models for the wireless physical world · energy-aware edge compute and on-device inference · agent traffic and agent-native networking · safe and verifiable autonomy (runtime guardrails, constrained policy optimization, conformal prediction) · AI-native wireless networks (5G-Advanced, 6G) · efficient and agentic LLMs · small language models, quantization, and distillation · multi-agent RL · digital twins · federated and distributed learning · AI-native physical layer and learned transceivers · physical-layer security for non-terrestrial links · integrated sensing and communication
 
 ## Skills
 

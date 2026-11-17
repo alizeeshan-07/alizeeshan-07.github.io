@@ -4,7 +4,7 @@ weight = 1
 
 [params]
   dateFormat = "2 January 2006"
-  description = "Ali Zeeshan — Head of AI at Adept Tech Solutions and PhD candidate at SEECS NUST. AI strategy, production AI systems, and research on efficient and agentic LLMs at the edge."
+  description = "Ali Zeeshan — Head of AI at Adept Tech Solutions and PhD candidate at SEECS NUST. AI strategy, production AI systems, and research on physical AI over 6G IoT networks: world models, agents, and safe intelligence at the wireless edge."
 
 [params.author]
   name = "Ali Zeeshan"
@@ -12,7 +12,7 @@ weight = 1
   # Rendered with markdownify inside an <h2>; <br> separates the lines.
   # The Urdu name lives in the navbar logo now, so it is not repeated here.
   headline = "Head of AI @ **Adept Tech Solutions** · PhD @ **NUST**<br><span class=\"text-base\">Engineer by trade, theorist by training</span>"
-  bio = "Closed-loop AI systems that learn under hard physical, communication, and cost budgets — backed by provable guarantees."
+  bio = "Physical AI over 6G IoT networks: world models, agents, and safe intelligence at the wireless edge."
   links = [
     { linkedin = "https://www.linkedin.com/in/alizeeshan07/" },
     { google-scholar = "https://scholar.google.com/citations?user=2T_o6-QAAAAJ" },
