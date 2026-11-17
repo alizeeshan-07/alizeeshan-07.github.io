@@ -103,6 +103,16 @@
 # omitted rather than guessed everywhere else, so a missing author line means
 # nobody has checked it yet, not that the paper is single-authored.
 
+# The one in-progress entry that names its venue: asked for by name, and the
+# "Submitted" chip keeps it from reading as an acceptance.
+- group: inprogress
+  sortkey: 202620
+  year: 2026
+  title: "Flight Plans in Plain Sight: Intent Leakage in Agentic Service Discovery for Low-Altitude Wireless Networks"
+  authors: "R. Ahmad, **H. M. A. Zeeshan**, S. M. T. Imam, K. Dev, H. Jung, S. A. Hassan"
+  venue: "IEEE Vehicular Technology Magazine"
+  status: "Submitted"
+
 - group: inprogress
   sortkey: 202619
   year: 2026
